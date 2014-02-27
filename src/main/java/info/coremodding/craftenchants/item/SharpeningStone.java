@@ -8,14 +8,21 @@
   */
 package info.coremodding.craftenchants.item;
 
+import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.item.Item;
 
 import info.coremodding.craftenchants.proxy.CommonProxy;
 
 public class SharpeningStone extends Item {
     public SharpeningStone() {
-	super();
+	super(2000);
 	setUnlocalizedName("sharpeningstone");
 	setCreativeTab(CommonProxy.tab);
+    }
+    
+    public void registerIcons(IconRegister reg) {
+	if (itemID == CEItems.sharpeningStone.itemID) {
+	    this.itemIcon = reg.registerIcon(getUnlocalizedName());
+	}
     }
 }

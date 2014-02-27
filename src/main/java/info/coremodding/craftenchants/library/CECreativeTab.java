@@ -8,21 +8,20 @@
   */
 package info.coremodding.craftenchants.library;
 
+import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Blocks;
-import net.minecraft.item.Item;
 
 public class CECreativeTab extends CreativeTabs {
     /**
      * @param lable
      */
     public CECreativeTab(String tabLabel) {
-	super(tabLabel);
+	super(CreativeTabs.getNextID(),tabLabel);
     }
-
+    
     @Override
-    public Item getTabIconItem() {
-	return Item.getItemFromBlock(Blocks.anvil);
+    public int getTabIconItemIndex() {
+        return Block.anvil.blockID;
     }
 
 }

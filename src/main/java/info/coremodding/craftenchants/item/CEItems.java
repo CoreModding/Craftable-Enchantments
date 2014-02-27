@@ -8,11 +8,9 @@
   */
 package info.coremodding.craftenchants.item;
 
-import net.minecraft.enchantment.Enchantment;
-import net.minecraft.enchantment.EnchantmentData;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import cpw.mods.fml.common.registry.GameRegistry;
+import cpw.mods.fml.common.registry.LanguageRegistry;
 
 public class CEItems {
     public static Item sharpeningStone;
@@ -20,6 +18,7 @@ public class CEItems {
     public static void initialize() {
 	createItems();
 	registerItems();
+	nameItems();
 	addRecipes();
     }
     
@@ -31,12 +30,11 @@ public class CEItems {
 	GameRegistry.registerItem(sharpeningStone, sharpeningStone.getUnlocalizedName());
     }
     
+    public static void nameItems() {
+	LanguageRegistry.addName(sharpeningStone, "Sharpening Stone");
+    }
+    
     public static void addRecipes() {
-	GameRegistry.addRecipe(Items.enchanted_book.getEnchantedItemStack(new EnchantmentData(Enchantment.sharpness, 1)),
-		CEItemRecipe.sharpeningStone);
-	GameRegistry.addRecipe(Items.enchanted_book.getEnchantedItemStack(new EnchantmentData(Enchantment.protection, 2)),
-		CEItemRecipe.armorKit);
-	GameRegistry.addRecipe(Items.enchanted_book.getEnchantedItemStack(new EnchantmentData(Enchantment.featherFalling, 2)),
-		CEItemRecipe.woolPadding);
+	
     }
 }
