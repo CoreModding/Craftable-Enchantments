@@ -1,6 +1,6 @@
 /** 
   * Craftable-Enchantments
-  * ModItem.java
+  * ItemCE.java
   * //TODO File description
   * @copyright (C) 2014
   * @author Kevin O'Brien (AKA ShooShoSha)
@@ -8,17 +8,21 @@
   */
 package info.coremodding.craftenchants.item;
 
-import info.coremodding.craftenchants.proxy.CommonProxy;
-
 import net.minecraft.item.Item;
 
-public abstract class ModItem extends Item {
+import info.coremodding.craftenchants.library.Reference;
+import info.coremodding.craftenchants.proxy.CommonProxy;
+
+public class ItemCE extends Item {
     protected String unlocalName;
     
-    public ModItem(int id) {
+    public ItemCE(int id) {
 	super(id);
 	setCreativeTab(CommonProxy.tab);
 	setUnlocalizedName(unlocalName);
+    }
+    public void setName(String unlocalName) {
+	setUnlocalizedName(Reference.MOD_ID + ":" + unlocalName);
     }
 
 }

@@ -8,14 +8,14 @@
  */
 package info.coremodding.craftenchants.event;
 
-import info.coremodding.craftenchants.item.CEItems;
+import info.coremodding.craftenchants.item.ModItems;
 
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
 public final class PreInitializer {
     
     public static void handle(FMLPreInitializationEvent event) {
-	CEItems.initialize();
+	ModItems.initialize();
     }
     
 }
