@@ -8,12 +8,12 @@
   */
 package info.coremodding.craftenchants.item.enchants;
 
-import info.coremodding.craftenchants.item.ModItem;
+import info.coremodding.craftenchants.item.ItemCE;
 
 
-public class ReinforcedNock extends ModItem {
-    public ReinforcedNock() {
-	super(5001);
+public class ReinforcedNock extends ItemCE {
+    public ReinforcedNock(int id) {
+	super(id);
 	unlocalName = "reinforcednock";
     }
 

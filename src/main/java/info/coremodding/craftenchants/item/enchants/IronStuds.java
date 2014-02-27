@@ -8,10 +8,10 @@
   */
 package info.coremodding.craftenchants.item.enchants;
 
-import info.coremodding.craftenchants.item.ModItem;
+import info.coremodding.craftenchants.item.ItemCE;
 
 
-public class IronStuds extends ModItem {
+public class IronStuds extends ItemCE {
     public IronStuds(int id) {
 	super(id);
 	unlocalName = "ironstuds";

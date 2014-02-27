@@ -8,10 +8,10 @@
   */
 package info.coremodding.craftenchants.item.enchants;
 
-import info.coremodding.craftenchants.item.ModItem;
+import info.coremodding.craftenchants.item.ItemCE;
 
 
-public class Snorkle extends ModItem {
+public class Snorkle extends ItemCE {
     public Snorkle(int id) {
 	super(id);
 	unlocalName = "snorkle";

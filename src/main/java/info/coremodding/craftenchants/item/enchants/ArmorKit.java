@@ -8,13 +8,13 @@
   */
 package info.coremodding.craftenchants.item.enchants;
 
-import info.coremodding.craftenchants.item.ModItem;
+import info.coremodding.craftenchants.item.ItemCE;
 
 
-public class ArmorKit extends ModItem {
+public class ArmorKit extends ItemCE {
     
-    public ArmorKit() {
-	super(5001);
+    public ArmorKit(int id) {
+	super(id);
 	unlocalName = "armorkit";
     }
 

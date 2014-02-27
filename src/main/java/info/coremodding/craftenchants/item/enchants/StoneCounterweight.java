@@ -8,10 +8,10 @@
   */
 package info.coremodding.craftenchants.item.enchants;
 
-import info.coremodding.craftenchants.item.ModItem;
+import info.coremodding.craftenchants.item.ItemCE;
 
 
-public class StoneCounterweight extends ModItem {
+public class StoneCounterweight extends ItemCE {
     public StoneCounterweight(int id) {
 	super(id);
 	unlocalName = "stonecounterweight";

@@ -8,12 +8,12 @@
   */
 package info.coremodding.craftenchants.item.enchants;
 
-import info.coremodding.craftenchants.item.ModItem;
+import info.coremodding.craftenchants.item.ItemCE;
 
 
-public class SharpeningStone extends ModItem {
-    public SharpeningStone() {
-	super(5000);
+public class SharpeningStone extends ItemCE {
+    public SharpeningStone(int id) {
+	super(id);
 	unlocalName = "sharpeningstone";
     }
 }

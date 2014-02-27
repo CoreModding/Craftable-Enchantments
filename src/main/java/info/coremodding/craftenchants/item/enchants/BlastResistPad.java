@@ -8,10 +8,10 @@
   */
 package info.coremodding.craftenchants.item.enchants;
 
-import info.coremodding.craftenchants.item.ModItem;
+import info.coremodding.craftenchants.item.ItemCE;
 
 
-public class BlastResistPad extends ModItem {
+public class BlastResistPad extends ItemCE {
     public BlastResistPad(int id) {
 	super(id);
 	unlocalName = "blastresistpad";

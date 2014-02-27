@@ -8,10 +8,10 @@
   */
 package info.coremodding.craftenchants.item.enchants;
 
-import info.coremodding.craftenchants.item.ModItem;
+import info.coremodding.craftenchants.item.ItemCE;
 
 
-public class WoolPadding extends ModItem {
+public class WoolPadding extends ItemCE {
     public WoolPadding(int id) {
 	super(id);
 	unlocalName = "woolpadding";
