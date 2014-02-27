@@ -8,7 +8,10 @@
   */
 package info.coremodding.craftenchants.item;
 
+import info.coremodding.craftenchants.item.enchants.SharpeningStone;
+
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
@@ -35,6 +38,6 @@ public class CEItems {
     }
     
     public static void addRecipes() {
-	
+	GameRegistry.addShapedRecipe(new ItemStack(sharpeningStone), Recipe.sharpeningStone);
     }
 }
