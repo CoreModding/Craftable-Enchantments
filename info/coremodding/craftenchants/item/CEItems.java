@@ -14,6 +14,7 @@ import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import cpw.mods.fml.common.registry.GameRegistry;
 
+@SuppressWarnings("javadoc")
 public class CEItems {
     public static Item sharpeningStone;
     

@@ -14,6 +14,13 @@ import info.coremodding.craftenchants.library.CECreativeTab;
 import info.coremodding.craftenchants.library.Reference;
 
 
-public class CommonProxy implements Proxy {
+/**
+ * The mod common proxy
+ */
+public class CommonProxy {
+	
+    /**
+     * The mod creative tab
+     */
     public static CreativeTabs tab = new CECreativeTab(Reference.MOD_ID);
 }

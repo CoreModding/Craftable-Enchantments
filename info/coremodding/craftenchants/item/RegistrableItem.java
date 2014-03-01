@@ -10,6 +10,7 @@ package info.coremodding.craftenchants.item;
 
 import net.minecraft.creativetab.CreativeTabs;
 
+@SuppressWarnings("javadoc")
 public interface RegistrableItem {
     void setName(String unlocalName);
     void setTexture();

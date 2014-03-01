@@ -12,8 +12,13 @@ import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 
+/**
+ * The mod item recipes
+ */
+@SuppressWarnings("javadoc")
 public class CEItemRecipe {
-    public static final Object[] sharpeningStone = new Object[] {
+
+	public static final Object[] sharpeningStone = new Object[] {
 	"FFF",
 	"FSF",
 	"FFF",

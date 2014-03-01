@@ -12,7 +12,13 @@ import net.minecraft.item.Item;
 
 import info.coremodding.craftenchants.proxy.CommonProxy;
 
+/**
+ * The sharpening stone item class
+ */
 public class SharpeningStone extends Item {
+    /**
+     * The main constructor
+     */
     public SharpeningStone() {
 	super();
 	setUnlocalizedName("sharpeningstone");

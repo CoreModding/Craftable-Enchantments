@@ -12,9 +12,13 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 
+/**
+ * The mod creative tab
+ */
 public class CECreativeTab extends CreativeTabs {
+	
     /**
-     * @param lable
+     * @param tabLabel The tab's name
      */
     public CECreativeTab(String tabLabel) {
 	super(tabLabel);

@@ -10,11 +10,10 @@ package info.coremodding.craftenchants.event;
 
 import info.coremodding.craftenchants.item.CEItems;
 
-import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-
+@SuppressWarnings("javadoc")
 public final class PreInitializer {
     
-    public static void handle(FMLPreInitializationEvent event) {
+    public static void handle() {
 	CEItems.initialize();
     }
     

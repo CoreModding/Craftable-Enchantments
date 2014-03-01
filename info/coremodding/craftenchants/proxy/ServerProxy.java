@@ -8,6 +8,9 @@
  */
 package info.coremodding.craftenchants.proxy;
 
+/**
+ * The server proxy
+ */
 public class ServerProxy extends CommonProxy {
 
 }
