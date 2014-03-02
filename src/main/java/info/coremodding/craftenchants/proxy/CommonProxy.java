@@ -20,5 +20,5 @@ public class CommonProxy {
     /**
      * The mod creative tab
      */
-    public static CreativeTabs tab = new CECreativeTab(Reference.MOD_ID);
+    public static final CreativeTabs tab = new CECreativeTab(Reference.MOD_ID);
 }
