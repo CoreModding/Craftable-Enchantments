@@ -20,7 +20,7 @@ public class SharpeningStone extends Item {
      */
     public SharpeningStone() {
         super();
-        setUnlocalizedName("sharpeningstone");
+        setUnlocalizedName("SharpeningStone");
         setCreativeTab(CommonProxy.tab);
     }
 }
