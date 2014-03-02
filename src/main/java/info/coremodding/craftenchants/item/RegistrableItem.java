@@ -1,4 +1,4 @@
-/** 
+/**
  * Craftable Enchantments
  * RegistrableItem.java
  * //TODO File description
@@ -12,13 +12,13 @@ import net.minecraft.creativetab.CreativeTabs;
 
 @SuppressWarnings("javadoc")
 public interface RegistrableItem {
-	void addRecipe();
+    void addRecipe();
 
-	void addToGame();
+    void addToGame();
 
-	void setName(String unlocalName);
+    void setName(String unlocalName);
 
-	void setTab(CreativeTabs tab);
+    void setTab(CreativeTabs tab);
 
-	void setTexture();
+    void setTexture();
 }

@@ -1,4 +1,4 @@
-/** 
+/**
  * Craftable Enchantments
  * ServerProxy.java
  * //TODO File description

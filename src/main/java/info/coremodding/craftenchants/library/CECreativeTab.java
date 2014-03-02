@@ -1,4 +1,4 @@
-/** 
+/**
  * Craftable Enchantments
  * CECreativeTab.java
  * //TODO File description
@@ -17,17 +17,16 @@ import net.minecraft.item.Item;
  */
 public class CECreativeTab extends CreativeTabs {
 
-	/**
-	 * @param tabLabel
-	 *            The tab's name
-	 */
-	public CECreativeTab(String tabLabel) {
-		super(tabLabel);
-	}
+    /**
+     * @param tabLabel The tab's name
+     */
+    public CECreativeTab(String tabLabel) {
+        super(tabLabel);
+    }
 
-	@Override
-	public Item getTabIconItem() {
-		return Item.getItemFromBlock(Blocks.anvil);
-	}
+    @Override
+    public Item getTabIconItem() {
+        return Item.getItemFromBlock(Blocks.anvil);
+    }
 
 }

@@ -1,4 +1,4 @@
-/** 
+/**
  * Craftable Enchantments
  * PreInitializer.java
  * //TODO File description
@@ -13,8 +13,8 @@ import info.coremodding.craftenchants.item.CEItems;
 @SuppressWarnings("javadoc")
 public final class PreInitializer {
 
-	public static void handle() {
-		CEItems.initialize();
-	}
+    public static void handle() {
+        CEItems.initialize();
+    }
 
 }

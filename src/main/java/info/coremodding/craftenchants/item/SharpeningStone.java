@@ -1,4 +1,4 @@
-/** 
+/**
  * Craftable Enchantments
  * SharpeningStone.java
  * //TODO File description
@@ -15,12 +15,12 @@ import net.minecraft.item.Item;
  * The sharpening stone item class
  */
 public class SharpeningStone extends Item {
-	/**
-	 * The main constructor
-	 */
-	public SharpeningStone() {
-		super();
-		setUnlocalizedName("sharpeningstone");
-		setCreativeTab(CommonProxy.tab);
-	}
+    /**
+     * The main constructor
+     */
+    public SharpeningStone() {
+        super();
+        setUnlocalizedName("sharpeningstone");
+        setCreativeTab(CommonProxy.tab);
+    }
 }

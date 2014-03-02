@@ -1,4 +1,4 @@
-/** 
+/**
  * Craftable Enchantments
  * CommonProxy.java
  * //TODO File description
@@ -17,8 +17,8 @@ import net.minecraft.creativetab.CreativeTabs;
  */
 public class CommonProxy {
 
-	/**
-	 * The mod creative tab
-	 */
-	public static CreativeTabs tab = new CECreativeTab(Reference.MOD_ID);
+    /**
+     * The mod creative tab
+     */
+    public static CreativeTabs tab = new CECreativeTab(Reference.MOD_ID);
 }
