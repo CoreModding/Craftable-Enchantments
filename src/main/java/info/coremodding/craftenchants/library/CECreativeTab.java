@@ -18,10 +18,9 @@ import net.minecraft.item.Item;
 public class CECreativeTab extends CreativeTabs {
 
     /**
-     * @param tabLabel The tab's name
      */
-    public CECreativeTab(String tabLabel) {
-        super(tabLabel);
+    public CECreativeTab() {
+        super(Reference.MOD_ID);
     }
 
     @Override

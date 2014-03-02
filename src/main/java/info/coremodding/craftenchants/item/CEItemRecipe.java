@@ -16,7 +16,7 @@ import net.minecraft.item.ItemStack;
  * The mod item recipes
  */
 @SuppressWarnings("javadoc")
-public class CEItemRecipe {
+class CEItemRecipe {
 
     public static final Object[] armorKit = new Object[]{"LLL", "LWL", "LLL",
             'L', new ItemStack(Items.leather, 1), 'W', Blocks.wool};

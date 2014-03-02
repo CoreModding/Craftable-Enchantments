@@ -16,9 +16,9 @@ import net.minecraft.item.Item;
 
 @SuppressWarnings("javadoc")
 public class CEItems {
-    public static Item sharpeningStone;
+    private static Item sharpeningStone;
 
-    public static void addRecipes() {
+    private static void addRecipes() {
         GameRegistry.addRecipe(Items.enchanted_book
                 .getEnchantedItemStack(new EnchantmentData(
                         Enchantment.sharpness, 1)),
@@ -32,7 +32,7 @@ public class CEItems {
                 CEItemRecipe.woolPadding);
     }
 
-    public static void createItems() {
+    private static void createItems() {
         sharpeningStone = new SharpeningStone();
     }
 
@@ -42,7 +42,7 @@ public class CEItems {
         addRecipes();
     }
 
-    public static void registerItems() {
+    private static void registerItems() {
         GameRegistry.registerItem(sharpeningStone,
                 sharpeningStone.getUnlocalizedName());
     }

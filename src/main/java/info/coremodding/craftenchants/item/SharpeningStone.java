@@ -14,7 +14,7 @@ import net.minecraft.item.Item;
 /**
  * The sharpening stone item class
  */
-public class SharpeningStone extends Item {
+class SharpeningStone extends Item {
     /**
      * The main constructor
      */

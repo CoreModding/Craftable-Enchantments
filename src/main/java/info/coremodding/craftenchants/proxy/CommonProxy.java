@@ -9,7 +9,6 @@
 package info.coremodding.craftenchants.proxy;
 
 import info.coremodding.craftenchants.library.CECreativeTab;
-import info.coremodding.craftenchants.library.Reference;
 import net.minecraft.creativetab.CreativeTabs;
 
 /**
@@ -20,5 +19,5 @@ public class CommonProxy {
     /**
      * The mod creative tab
      */
-    public static final CreativeTabs tab = new CECreativeTab(Reference.MOD_ID);
+    public static final CreativeTabs tab = new CECreativeTab();
 }
