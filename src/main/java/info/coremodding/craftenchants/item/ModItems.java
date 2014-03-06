@@ -9,12 +9,22 @@
 package info.coremodding.craftenchants.item;
 
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
+import java.util.TreeMap;
 
 import net.minecraft.item.ItemStack;
 import cpw.mods.fml.common.registry.GameRegistry;
 
-import info.coremodding.craftenchants.item.enchants.*;
+import info.coremodding.craftenchants.item.enchants.ArmorKit;
+import info.coremodding.craftenchants.item.enchants.BlastResistPad;
+import info.coremodding.craftenchants.item.enchants.IronCounterweight;
+import info.coremodding.craftenchants.item.enchants.IronStuds;
+import info.coremodding.craftenchants.item.enchants.ReinforcedNock;
+import info.coremodding.craftenchants.item.enchants.SharpeningStone;
+import info.coremodding.craftenchants.item.enchants.Snorkle;
+import info.coremodding.craftenchants.item.enchants.StoneCounterweight;
+import info.coremodding.craftenchants.item.enchants.WoolPadding;
 
 public class ModItems {
     //Collection of all items
@@ -29,6 +39,9 @@ public class ModItems {
     public static ItemCE snorkle;
     public static ItemCE stoneCounterweight;
     public static ItemCE woolPadding;
+    
+    //Map items to recipes
+    public static Map<ItemCE, Object[]> recipeOutput = new TreeMap<>();
     
     public static void initialize() {
 	createItems();
