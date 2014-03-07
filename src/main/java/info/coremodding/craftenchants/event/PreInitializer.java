@@ -12,13 +12,17 @@ package info.coremodding.craftenchants.event;
 
 import info.coremodding.craftenchants.item.CEItems;
 
-@SuppressWarnings("javadoc")
+/**
+ * The class that handles preinit
+ */
 public final class PreInitializer
 {
     
+    /**
+     * Handle preinit
+     */
     public static void handle()
     {
         CEItems.initialize();
     }
-    
 }

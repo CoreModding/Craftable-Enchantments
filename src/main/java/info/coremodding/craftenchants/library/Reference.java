@@ -21,8 +21,9 @@ public final class Reference
      * The client proxy location
      */
     public static final String CLIENT_PROXY = "info.coremodding.craftenchants.proxy.ClientProxy";
+    
     /**
-     * The modid
+     * The mod id
      */
     public static final String MOD_ID       = "craftenchants";
     
@@ -30,6 +31,7 @@ public final class Reference
      * The mod name
      */
     public static final String MOD_NAME     = "Craftable Enchantments";
+    
     /**
      * The server proxy location
      */

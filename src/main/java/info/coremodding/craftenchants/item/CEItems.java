@@ -10,15 +10,18 @@
  */
 package info.coremodding.craftenchants.item;
 
-import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentData;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
+import cpw.mods.fml.common.registry.GameRegistry;
 
-@SuppressWarnings("javadoc")
+/**
+ * Craftable enchantment items
+ */
 public class CEItems
 {
+    
     private static Item sharpeningStone;
     
     private static void addRecipes()
@@ -41,6 +44,9 @@ public class CEItems
         sharpeningStone = new SharpeningStone();
     }
     
+    /**
+     * Initializes stuff
+     */
     public static void initialize()
     {
         createItems();

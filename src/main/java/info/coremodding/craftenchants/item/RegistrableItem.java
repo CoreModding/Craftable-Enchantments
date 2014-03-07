@@ -15,6 +15,7 @@ import net.minecraft.creativetab.CreativeTabs;
 @SuppressWarnings("javadoc")
 public interface RegistrableItem
 {
+    
     void addRecipe();
     
     void addToGame();

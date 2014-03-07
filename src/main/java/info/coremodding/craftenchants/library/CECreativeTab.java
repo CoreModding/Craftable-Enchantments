@@ -21,6 +21,7 @@ public class CECreativeTab extends CreativeTabs
 {
     
     /**
+     * The class constructor
      */
     public CECreativeTab()
     {
@@ -32,5 +33,4 @@ public class CECreativeTab extends CreativeTabs
     {
         return Item.getItemFromBlock(Blocks.anvil);
     }
-    
 }

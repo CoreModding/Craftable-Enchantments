@@ -17,7 +17,6 @@ import net.minecraft.item.ItemStack;
 /**
  * The mod item recipes
  */
-@SuppressWarnings("javadoc")
 class CEItemRecipe
 {
     
