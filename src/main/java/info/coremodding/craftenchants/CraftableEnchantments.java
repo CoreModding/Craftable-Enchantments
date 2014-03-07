@@ -2,9 +2,11 @@
  * Craftable Enchantments
  * CraftableEnchantments.java
  * //TODO File description
+ * 
  * @copyright (C) 2014
  * @author Kevin O'Brien (AKA ShooShoSha)
- * @license <a href="http://www.gnu.org/licenses/">GNU Lesser General Public License</a>
+ * @license <a href="http://www.gnu.org/licenses/">GNU Lesser General Public
+ *          License</a>
  */
 package info.coremodding.craftenchants;
 
@@ -21,18 +23,20 @@ import info.coremodding.craftenchants.proxy.CommonProxy;
  * The main mod class
  */
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME)
-public class CraftableEnchantments {
+public class CraftableEnchantments
+{
     @SuppressWarnings("javadoc")
     @Instance(Reference.MOD_ID)
     public static CraftableEnchantments instance;
-
+    
     @SuppressWarnings("javadoc")
     @SidedProxy(clientSide = Reference.CLIENT_PROXY, serverSide = Reference.SERVER_PROXY)
-    public static CommonProxy proxy;
-
-    @SuppressWarnings({"javadoc", "static-method", "unused"})
+    public static CommonProxy           proxy;
+    
+    @SuppressWarnings({ "javadoc", "static-method", "unused" })
     @EventHandler
-    public void preInitialization(FMLPreInitializationEvent preEvent) {
+    public void preInitialization(FMLPreInitializationEvent preEvent)
+    {
         PreInitializer.handle();
     }
 }

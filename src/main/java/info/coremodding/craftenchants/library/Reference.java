@@ -2,9 +2,11 @@
  * Craftable Enchantments
  * Reference.java
  * //TODO File description
+ * 
  * @copyright (C) 2014
  * @author Kevin O'Brien (AKA ShooShoSha)
- * @license <a href="http://www.gnu.org/licenses/">GNU Lesser General Public License</a>
+ * @license <a href="http://www.gnu.org/licenses/">GNU Lesser General Public
+ *          License</a>
  */
 
 package info.coremodding.craftenchants.library;
@@ -12,8 +14,9 @@ package info.coremodding.craftenchants.library;
 /**
  * The mod constants
  */
-public final class Reference {
-
+public final class Reference
+{
+    
     /**
      * The client proxy location
      */
@@ -21,12 +24,12 @@ public final class Reference {
     /**
      * The modid
      */
-    public static final String MOD_ID = "craftenchants";
-
+    public static final String MOD_ID       = "craftenchants";
+    
     /**
      * The mod name
      */
-    public static final String MOD_NAME = "Craftable Enchantments";
+    public static final String MOD_NAME     = "Craftable Enchantments";
     /**
      * The server proxy location
      */

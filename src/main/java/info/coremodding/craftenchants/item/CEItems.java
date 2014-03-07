@@ -2,9 +2,11 @@
  * Craftable Enchantments
  * CEItems.java
  * //TODO File description
+ * 
  * @copyright (C) 2014
  * @author Kevin O'Brien (AKA ShooShoSha)
- * @license <a href="http://www.gnu.org/licenses/">GNU Lesser General Public License</a>
+ * @license <a href="http://www.gnu.org/licenses/">GNU Lesser General Public
+ *          License</a>
  */
 package info.coremodding.craftenchants.item;
 
@@ -15,10 +17,12 @@ import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 
 @SuppressWarnings("javadoc")
-public class CEItems {
+public class CEItems
+{
     private static Item sharpeningStone;
-
-    private static void addRecipes() {
+    
+    private static void addRecipes()
+    {
         GameRegistry.addRecipe(Items.enchanted_book
                 .getEnchantedItemStack(new EnchantmentData(
                         Enchantment.sharpness, 1)),
@@ -31,18 +35,21 @@ public class CEItems {
                         Enchantment.featherFalling, 2)),
                 CEItemRecipe.woolPadding);
     }
-
-    private static void createItems() {
+    
+    private static void createItems()
+    {
         sharpeningStone = new SharpeningStone();
     }
-
-    public static void initialize() {
+    
+    public static void initialize()
+    {
         createItems();
         registerItems();
         addRecipes();
     }
-
-    private static void registerItems() {
+    
+    private static void registerItems()
+    {
         GameRegistry.registerItem(sharpeningStone,
                 sharpeningStone.getUnlocalizedName());
     }
