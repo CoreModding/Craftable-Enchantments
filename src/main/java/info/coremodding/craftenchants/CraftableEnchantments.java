@@ -10,7 +10,7 @@
  */
 package info.coremodding.craftenchants;
 
-import info.coremodding.craftenchants.event.PreInitializer;
+import info.coremodding.craftenchants.item.CEItems;
 import info.coremodding.craftenchants.library.Reference;
 import info.coremodding.craftenchants.proxy.CommonProxy;
 import cpw.mods.fml.common.Mod;
@@ -46,6 +46,6 @@ public class CraftableEnchantments
     @EventHandler
     public void preInitialization(FMLPreInitializationEvent preEvent)
     {
-        PreInitializer.handle();
+        CEItems.initialize();
     }
 }
