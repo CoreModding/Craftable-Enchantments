@@ -10,7 +10,7 @@ import info.coremodding.craftenchants.item.ItemCE;
 public class StoneCounterweight extends ItemCE {
     public StoneCounterweight(int id) {
         super(id);
-        unlocalName = "stonecounterweight";
+        setName("stonecounterweight");
     }
 
 }

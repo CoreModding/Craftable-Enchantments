@@ -10,7 +10,7 @@ import info.coremodding.craftenchants.item.ItemCE;
 public class IronCounterweight extends ItemCE {
     public IronCounterweight(int id) {
         super(id);
-        unlocalName = "ironcounterweight";
+        setName("ironcounterweight");
     }
 
 }

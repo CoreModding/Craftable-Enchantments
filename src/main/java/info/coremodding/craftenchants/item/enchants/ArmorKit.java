@@ -11,7 +11,7 @@ public class ArmorKit extends ItemCE {
 
     public ArmorKit(int id) {
         super(id);
-        unlocalName = "armorkit";
+        setName("armorkit");
     }
 
 }

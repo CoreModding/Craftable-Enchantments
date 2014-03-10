@@ -10,7 +10,7 @@ import info.coremodding.craftenchants.item.ItemCE;
 public class ReinforcedNock extends ItemCE {
     public ReinforcedNock(int id) {
         super(id);
-        unlocalName = "reinforcednock";
+        setName("reinforcednock");
     }
 
 }

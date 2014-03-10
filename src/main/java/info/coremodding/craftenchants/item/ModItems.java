@@ -10,7 +10,6 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
 
-import net.minecraft.item.ItemStack;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 import info.coremodding.craftenchants.item.enchants.ArmorKit;
@@ -26,7 +25,10 @@ import info.coremodding.craftenchants.item.enchants.WoolPadding;
 public class ModItems {
     // Collection of all items
     public static Set<ItemCE> items = new HashSet<>();
-    // Instances of all items
+    
+    /**
+     *  Instances of all items
+     */
     public static ItemCE armorKit;
     public static ItemCE blastResistPad;
     public static ItemCE ironCounterweight;
@@ -65,7 +67,7 @@ public class ModItems {
     }
 
     private static void addRecipes() {
-        GameRegistry.addShapedRecipe(new ItemStack(sharpeningStone), ModRecipes.Items.sharpeningStone);
+        GameRegistry.addShapedRecipe(sharpeningStone.stack, ModRecipes.Items.sharpeningStone);
     }
 
 }

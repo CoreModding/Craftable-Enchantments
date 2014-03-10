@@ -10,7 +10,7 @@ import info.coremodding.craftenchants.item.ItemCE;
 public class WoolPadding extends ItemCE {
     public WoolPadding(int id) {
         super(id);
-        unlocalName = "woolpadding";
+        setName("woolpadding");
     }
 
 }

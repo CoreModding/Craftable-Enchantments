@@ -10,7 +10,7 @@ import info.coremodding.craftenchants.item.ItemCE;
 public class Snorkle extends ItemCE {
     public Snorkle(int id) {
         super(id);
-        unlocalName = "snorkle";
+        setName("snorkle");
     }
 
 }

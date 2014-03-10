@@ -10,7 +10,7 @@ import info.coremodding.craftenchants.item.ItemCE;
 public class IronStuds extends ItemCE {
     public IronStuds(int id) {
         super(id);
-        unlocalName = "ironstuds";
+        setName("ironstuds");
     }
 
 }
