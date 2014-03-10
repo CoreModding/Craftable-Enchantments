@@ -5,6 +5,9 @@
  */
 package info.coremodding.craftenchants.item;
 
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.item.Item;
 
 import info.coremodding.craftenchants.library.Reference;
@@ -20,6 +23,16 @@ public class ItemCE extends Item {
 
     public void setName(String unlocalName) {
         setUnlocalizedName(Reference.MOD_ID + ":" + unlocalName);
+    }
+    
+    public String getName() {
+        return this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(Reference.MOD_ID));
+    }
+    
+    @Override
+    @SideOnly(Side.CLIENT)
+    public void registerIcons(IconRegister iconRegister) {
+        this.itemIcon = iconRegister.registerIcon(getName());
     }
 
 }
