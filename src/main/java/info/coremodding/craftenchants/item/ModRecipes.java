@@ -8,7 +8,9 @@ package info.coremodding.craftenchants.item;
 import java.util.HashSet;
 import java.util.Set;
 
+import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
+import net.minecraft.enchantment.Enchantment;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
@@ -59,5 +61,31 @@ public class ModRecipes {
             list.add(woolPadding);
         }
     }
-
+    
+    public static class Output {
+        public static ItemStack sharpStoneSword = new ItemStack(Item.swordStone);
+        public static ItemStack sharpIronSword = new ItemStack(Item.swordIron);
+        public static ItemStack sharpDiamondSword = new ItemStack(Item.swordDiamond);
+        
+        public static void initialize() {
+            addEnchantments();
+            registerRecipes();
+        }
+        
+        private static void addEnchantments() {
+            addSwordEnchantments();
+        }
+        
+        private static void registerRecipes() {
+            GameRegistry.addShapelessRecipe(sharpStoneSword, Item.swordStone, ModItems.sharpeningStone);
+            GameRegistry.addShapelessRecipe(sharpIronSword, Item.swordIron, ModItems.sharpeningStone);
+            GameRegistry.addShapelessRecipe(sharpDiamondSword, Item.swordDiamond, ModItems.sharpeningStone);
+        }
+        
+        private static void addSwordEnchantments() {
+            sharpStoneSword.addEnchantment(Enchantment.sharpness, 1);
+            sharpIronSword.addEnchantment(Enchantment.sharpness, 1);
+            sharpDiamondSword.addEnchantment(Enchantment.sharpness, 1);
+        }
+    }
 }
