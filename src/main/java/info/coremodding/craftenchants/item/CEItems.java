@@ -1,41 +1,41 @@
 package info.coremodding.craftenchants.item;
 
-import net.minecraft.enchantment.Enchantment;
-import net.minecraft.enchantment.EnchantmentData;
-import net.minecraft.init.Items;
+import info.coremodding.craftenchants.item.enchants.SharpeningStone;
+
 import net.minecraft.item.Item;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 /**
- * Craftable enchantment items
+ * Craftable enchantment items that may be made in the Craftable Enchantments mod. This class keeps references to all
+ * items used in the game as well as initializes each item through construction and registration. Once initialization
+ * executes, each item may be used as a reference.
  */
 public class CEItems
 {
-    
+    /**
+     * Listing of all items used in this mod.
+     */
     private static Item sharpeningStone;
     
+    /**
+     * Registers the recipes to the game.
+     * @see CEItemRecipe
+     */
     private static void addRecipes()
     {
-        GameRegistry.addRecipe(Items.enchanted_book
-                .getEnchantedItemStack(new EnchantmentData(
-                        Enchantment.sharpness, 1)),
-                CEItemRecipe.sharpeningStone);
-        GameRegistry.addRecipe(Items.enchanted_book
-                .getEnchantedItemStack(new EnchantmentData(
-                        Enchantment.protection, 2)), CEItemRecipe.armorKit);
-        GameRegistry.addRecipe(Items.enchanted_book
-                .getEnchantedItemStack(new EnchantmentData(
-                        Enchantment.featherFalling, 2)),
-                CEItemRecipe.woolPadding);
+        //TODO Add recipes.
     }
     
+    /**
+     * Constructs the items in game.
+     */
     private static void createItems()
     {
         sharpeningStone = new SharpeningStone();
     }
     
     /**
-     * Initializes stuff
+     * Initializes the items through construction and registration.
      */
     public static void initialize()
     {
@@ -44,6 +44,9 @@ public class CEItems
         addRecipes();
     }
     
+    /**
+     * Adds constructed objects to the game registry for use.
+     */
     private static void registerItems()
     {
         GameRegistry.registerItem(sharpeningStone,
