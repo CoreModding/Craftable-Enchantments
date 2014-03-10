@@ -1,8 +1,8 @@
 /**
-  * Copyright 2014 by CoreModding under GNU Lesser General Public License (LGPLv3)
-  * http://www.gnu.org/licenses/gpl.html
-  * http://www.gnu.org/licenses/lgpl.html
-  */
+ * Copyright 2014 by CoreModding under GNU Lesser General Public License (LGPLv3)
+ * http://www.gnu.org/licenses/gpl.html
+ * http://www.gnu.org/licenses/lgpl.html
+ */
 package info.coremodding.craftenchants;
 
 import info.coremodding.craftenchants.item.ModItems;
@@ -18,29 +18,26 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
  * The main mod class
  */
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME)
-public class CraftableEnchantments
-{
-    
+public class CraftableEnchantments {
+
     /**
      * The instance of the class forge uses
      */
     @Instance(Reference.MOD_ID)
     public static CraftableEnchantments instance;
-    
+
     /**
      * Forge's instance of the mod proxy
      */
     @SidedProxy(clientSide = Reference.CLIENT_PROXY, serverSide = Reference.SERVER_PROXY)
-    public static CommonProxy           proxy;
-    
+    public static CommonProxy proxy;
+
     /**
-     * @param preEvent
-     *            The event that triggered the method
+     * @param preEvent The event that triggered the method
      */
     @SuppressWarnings("static-method")
     @EventHandler
-    public void preInitialization(FMLPreInitializationEvent preEvent)
-    {
+    public void preInitialization(FMLPreInitializationEvent preEvent) {
         ModItems.initialize();
     }
 }
