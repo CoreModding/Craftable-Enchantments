@@ -102,4 +102,4 @@ processResources {
 //artifacts {
 //      archives javadocJar
 //      archives apiJar
-//}*/
+//}

@@ -1,6 +1,11 @@
+/**
+  * Copyright 2014 by CoreModding under GNU Lesser General Public License (LGPLv3)
+  * http://www.gnu.org/licenses/gpl.html
+  * http://www.gnu.org/licenses/lgpl.html
+  */
 package info.coremodding.craftenchants;
 
-import info.coremodding.craftenchants.item.CEItems;
+import info.coremodding.craftenchants.item.ModItems;
 import info.coremodding.craftenchants.library.Reference;
 import info.coremodding.craftenchants.proxy.CommonProxy;
 import cpw.mods.fml.common.Mod;
@@ -36,6 +41,6 @@ public class CraftableEnchantments
     @EventHandler
     public void preInitialization(FMLPreInitializationEvent preEvent)
     {
-        CEItems.initialize();
+        ModItems.initialize();
     }
 }
