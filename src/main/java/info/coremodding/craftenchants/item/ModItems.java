@@ -47,12 +47,12 @@ public class ModItems {
     private static void createItems() {
         items.add(armorKit = new ArmorKit(ModIDs.Items.Default.armorKit));
         items.add(blastResistPad = new BlastResistPad(ModIDs.Items.Default.blastResistPad));
-        items.add(ironCounterweight = new Counterweight(ModIDs.Items.ironCounterweight, EnumToolMaterial.IRON));
+        items.add(ironCounterweight = new Counterweight(ModIDs.Items.Default.ironCounterweight, EnumToolMaterial.IRON));
         items.add(ironStuds = new Studs(ModIDs.Items.Default.ironStuds, EnumToolMaterial.IRON));
         items.add(reinforcedNock = new ReinforcedNock(ModIDs.Items.Default.reinforcedNock));
         items.add(sharpeningStone = new SharpeningStone(ModIDs.Items.Default.sharpeningStone));
         items.add(snorkle = new Snorkle(ModIDs.Items.Default.snorkle));
-        items.add(stoneCounterweight = new Counterweight(ModIDs.Items.stoneCounterweight, EnumToolMaterial.STONE));
+        items.add(stoneCounterweight = new Counterweight(ModIDs.Items.Default.stoneCounterweight, EnumToolMaterial.STONE));
         items.add(woolPadding = new WoolPadding(ModIDs.Items.Default.woolPadding));
     }
 
