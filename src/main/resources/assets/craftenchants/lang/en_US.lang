@@ -1,0 +1,12 @@
+itemGroup.craftenchants=Craftable Enchants
+
+#Item localizations
+item.craftenchants:armorkit.name=Armor Kit
+item.craftenchants:blastresistpad.name=Blast Resist Pad
+item.craftenchants:ironcounterweight.name=Iron Counterweight
+item.craftenchants:ironstuds.name=Iron Studs
+item.craftenchants:reinforcednock.name=Reinforced Nock
+item.craftenchants:sharpeningstone.name=Sharpening Stone
+item.craftenchants:snorkle.name=Snorkle
+item.craftenchants:stonecounterweight.name=Stone Counterweight
+item.craftenchants:woolpadding.name=Wool padding
