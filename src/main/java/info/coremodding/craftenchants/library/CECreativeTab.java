@@ -1,10 +1,7 @@
-/** 
-  * Craftable Enchantments
-  * CECreativeTab.java
-  * //TODO File description
-  * @copyright (C) 2014
-  * @author Kevin O'Brien (AKA ShooShoSha)
-  * @license <a href="http://www.gnu.org/licenses/">GNU Lesser General Public License</a>
+/**
+  * Copyright 2014 by CoreModding under GNU Lesser General Public License (LGPLv3)
+  * http://www.gnu.org/licenses/gpl.html
+  * http://www.gnu.org/licenses/lgpl.html
   */
 package info.coremodding.craftenchants.library;
 
@@ -13,7 +10,7 @@ import net.minecraft.creativetab.CreativeTabs;
 
 public class CECreativeTab extends CreativeTabs {
     /**
-     * @param lable
+     * @param tabLabel Denotes the name to give the tab. It is defined by itemGroup.craftenchants in the lang file.
      */
     public CECreativeTab(String tabLabel) {
 	super(CreativeTabs.getNextID(),tabLabel);
