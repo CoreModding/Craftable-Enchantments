@@ -15,6 +15,7 @@ public final class PreInitializer {
     public static void handle(FMLPreInitializationEvent event) {
         ModRecipes.Items.itemizeRecipes();
         ModItems.initialize();
+        ModRecipes.Output.initialize();
     }
 
 }

@@ -5,14 +5,15 @@
  */
 package info.coremodding.craftenchants;
 
-import info.coremodding.craftenchants.item.ModItems;
-import info.coremodding.craftenchants.library.Reference;
-import info.coremodding.craftenchants.proxy.CommonProxy;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+
+import info.coremodding.craftenchants.event.PreInitializer;
+import info.coremodding.craftenchants.library.Reference;
+import info.coremodding.craftenchants.proxy.CommonProxy;
 
 /**
  * The main mod class
@@ -38,6 +39,6 @@ public class CraftableEnchantments {
     @SuppressWarnings("static-method")
     @EventHandler
     public void preInitialization(FMLPreInitializationEvent preEvent) {
-        ModItems.initialize();
+        PreInitializer.handle(preEvent);
     }
 }
