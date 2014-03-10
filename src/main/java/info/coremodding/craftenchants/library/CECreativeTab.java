@@ -1,11 +1,10 @@
 package info.coremodding.craftenchants.library;
 
+import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Blocks;
-import net.minecraft.item.Item;
 
 /**
- * The mod creative tab
+ * The mod creative tab.
  */
 public class CECreativeTab extends CreativeTabs
 {
@@ -19,8 +18,7 @@ public class CECreativeTab extends CreativeTabs
     }
     
     @Override
-    public Item getTabIconItem()
-    {
-        return Item.getItemFromBlock(Blocks.anvil);
+    public int getTabIconItemIndex() {
+        return Block.anvil.blockID;
     }
 }
