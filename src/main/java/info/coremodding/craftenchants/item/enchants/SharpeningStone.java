@@ -1,20 +1,20 @@
-package info.coremodding.craftenchants.item;
+package info.coremodding.craftenchants.item.enchants;
 
 import info.coremodding.craftenchants.proxy.CommonProxy;
 import net.minecraft.item.Item;
 
 /**
- * The sharpening stone item class
+ * The sharpening stone item class.
  */
 class SharpeningStone extends Item
 {
     
     /**
-     * The main constructor
+     * The main constructor.
      */
     public SharpeningStone()
     {
-        super();
+        super(25650);//TODO Implement proper ID handling.
         setUnlocalizedName("SharpeningStone");
         setCreativeTab(CommonProxy.tab);
     }
