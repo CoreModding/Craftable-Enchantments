@@ -15,10 +15,10 @@ import cpw.mods.fml.common.registry.GameRegistry;
 import info.coremodding.craftenchants.item.enchants.ArmorKit;
 import info.coremodding.craftenchants.item.enchants.BlastResistPad;
 import info.coremodding.craftenchants.item.enchants.Counterweight;
-import info.coremodding.craftenchants.item.enchants.IronStuds;
 import info.coremodding.craftenchants.item.enchants.ReinforcedNock;
 import info.coremodding.craftenchants.item.enchants.SharpeningStone;
 import info.coremodding.craftenchants.item.enchants.Snorkle;
+import info.coremodding.craftenchants.item.enchants.Studs;
 import info.coremodding.craftenchants.item.enchants.WoolPadding;
 
 public class ModItems {
@@ -48,7 +48,7 @@ public class ModItems {
         items.add(armorKit = new ArmorKit(ModIDs.Items.Default.armorKit));
         items.add(blastResistPad = new BlastResistPad(ModIDs.Items.Default.blastResistPad));
         items.add(ironCounterweight = new Counterweight(ModIDs.Items.ironCounterweight, EnumToolMaterial.IRON));
-        items.add(ironStuds = new IronStuds(ModIDs.Items.Default.ironStuds));
+        items.add(ironStuds = new Studs(ModIDs.Items.Default.ironStuds, EnumToolMaterial.IRON));
         items.add(reinforcedNock = new ReinforcedNock(ModIDs.Items.Default.reinforcedNock));
         items.add(sharpeningStone = new SharpeningStone(ModIDs.Items.Default.sharpeningStone));
         items.add(snorkle = new Snorkle(ModIDs.Items.Default.snorkle));
