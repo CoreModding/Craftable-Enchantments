@@ -16,10 +16,9 @@ public class CECreativeTab extends CreativeTabs
     
     /**
      * The class constructor
-     * @param tabLabel Denotes the name to give the tab. It is defined by itemGroup.craftenchants in the lang file.
      */
-    public CECreativeTab(String tabLabel) {
-		super(CreativeTabs.getNextID(),tabLabel);
+    public CECreativeTab() {
+		super(CreativeTabs.getNextID(), Reference.MOD_ID);
     }
     
     @Override
