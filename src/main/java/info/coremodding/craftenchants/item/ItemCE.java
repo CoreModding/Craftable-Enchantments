@@ -6,13 +6,11 @@
 package info.coremodding.craftenchants.item;
 
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 
 import info.coremodding.craftenchants.library.Reference;
 import info.coremodding.craftenchants.proxy.CommonProxy;
 
 public class ItemCE extends Item {
-    protected ItemStack stack;
 
     public ItemCE(int id) {
         super(id);
