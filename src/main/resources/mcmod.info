@@ -1,0 +1,15 @@
+[
+{
+  "modid": "craftenchants",
+  "name": "Craftable Enchantments",
+  "description": "Craftable Enchantments",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url":  "",
+  "updateUrl": "",
+  "authors": ["CoreModding Team"],
+  "credits": "The Forge and FML guys, for making this mod possible",
+  "screenshots": [],
+  "requiredMods": ["Forge"],
+}
+]
