@@ -9,7 +9,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 import net.minecraft.item.EnumToolMaterial;
-import net.minecraft.item.ItemStack;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 import info.coremodding.craftenchants.item.enchants.ArmorKit;
@@ -20,6 +19,7 @@ import info.coremodding.craftenchants.item.enchants.SharpeningStone;
 import info.coremodding.craftenchants.item.enchants.Snorkle;
 import info.coremodding.craftenchants.item.enchants.Studs;
 import info.coremodding.craftenchants.item.enchants.WoolPadding;
+import info.coremodding.craftenchants.library.ModIDs;
 
 public class ModItems {
     // Collection of all items
@@ -41,7 +41,6 @@ public class ModItems {
     public static void initialize() {
         createItems();
         registerItems();
-        addRecipes();
     }
 
     private static void createItems() {
@@ -61,18 +60,4 @@ public class ModItems {
             GameRegistry.registerItem(item, item.getUnlocalizedName());
         }
     }
-
-    private static void addRecipes() {
-        GameRegistry.addShapedRecipe(new ItemStack(armorKit), ModRecipes.Items.armorKit);
-        GameRegistry.addShapedRecipe(new ItemStack(blastResistPad), ModRecipes.Items.blastResistPad);
-        GameRegistry.addShapedRecipe(new ItemStack(ironCounterweight), ModRecipes.Items.ironCounterweight);
-        GameRegistry.addShapedRecipe(new ItemStack(ironStuds), ModRecipes.Items.ironStuds);
-        GameRegistry.addShapedRecipe(new ItemStack(reinforcedNock), ModRecipes.Items.reinforcedNock);
-        GameRegistry.addShapedRecipe(new ItemStack(sharpeningStone), ModRecipes.Items.sharpeningStone);
-        GameRegistry.addShapedRecipe(new ItemStack(snorkle), ModRecipes.Items.snorkle);
-        GameRegistry.addShapedRecipe(new ItemStack(stoneCounterweight), ModRecipes.Items.stoneCounterweight);
-        GameRegistry.addShapedRecipe(new ItemStack(woolPadding), ModRecipes.Items.woolPadding);
-        
-    }
-
 }
