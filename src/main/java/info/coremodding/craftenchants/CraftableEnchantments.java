@@ -13,7 +13,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
 import info.coremodding.craftenchants.event.PreInitializer;
 import info.coremodding.craftenchants.library.Reference;
-import info.coremodding.craftenchants.proxy.CommonProxy;
+import info.coremodding.craftenchants.proxy.Proxy;
 
 /**
  * The main mod class
@@ -31,7 +31,7 @@ public class CraftableEnchantments {
      * Forge's instance of the mod proxy
      */
     @SidedProxy(clientSide = Reference.CLIENT_PROXY, serverSide = Reference.SERVER_PROXY)
-    public static CommonProxy proxy;
+    public static Proxy proxy;
 
     /**
      * @param preEvent The event that triggered the method

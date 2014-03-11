@@ -9,15 +9,19 @@ import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 
 /**
- * The mod creative tab.
+ * The singleton mod creative tab.
  */
 public class CECreativeTab extends CreativeTabs {
-
+    private static final CECreativeTab instance = new CECreativeTab();
     /**
      * The class constructor
      */
-    public CECreativeTab() {
+    private CECreativeTab() {
         super(CreativeTabs.getNextID(), Reference.MOD_ID);
+    }
+    
+    public static CECreativeTab getInstance() {
+        return instance;
     }
 
     @Override

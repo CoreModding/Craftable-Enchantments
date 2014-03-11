@@ -5,9 +5,13 @@
  */
 package info.coremodding.craftenchants.proxy;
 
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+
 /**
  * The mod client proxy
  */
-public class ClientProxy extends CommonProxy {
+@SideOnly(Side.CLIENT)
+public class ClientProxy implements Proxy {
 
 }
