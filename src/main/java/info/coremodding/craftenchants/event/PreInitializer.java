@@ -5,17 +5,16 @@
  */
 package info.coremodding.craftenchants.event;
 
-import info.coremodding.craftenchants.item.ModItems;
-import info.coremodding.craftenchants.item.ModRecipes;
-
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+
+import info.coremodding.craftenchants.handler.Crafting;
+import info.coremodding.craftenchants.item.ModItems;
 
 public final class PreInitializer {
 
     public static void handle(FMLPreInitializationEvent event) {
-        ModRecipes.Items.itemizeRecipes();
         ModItems.initialize();
-        ModRecipes.Output.initialize();
+        Crafting.initialize();;
     }
 
 }
