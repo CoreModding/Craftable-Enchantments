@@ -5,19 +5,19 @@
  */
 package info.coremodding.craftenchants.item;
 
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.item.Item;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 import info.coremodding.craftenchants.library.Reference;
-import info.coremodding.craftenchants.proxy.CommonProxy;
+import info.coremodding.craftenchants.proxy.Proxy;
 
 public class ItemCE extends Item {
 
     public ItemCE(int id) {
         super(id);
-        setCreativeTab(CommonProxy.tab);
+        setCreativeTab(Proxy.tab);
         setName("");
     }
 
