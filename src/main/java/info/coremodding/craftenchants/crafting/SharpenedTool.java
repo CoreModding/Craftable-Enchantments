@@ -8,7 +8,7 @@ package info.coremodding.craftenchants.crafting;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.inventory.InventoryCrafting;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemTool;
+import net.minecraft.item.ItemSword;
 import net.minecraft.item.crafting.IRecipe;
 import net.minecraft.world.World;
 
@@ -34,7 +34,7 @@ public class SharpenedTool implements IRecipe {
         for(int slot = 0; slot < craftingMatrix.getSizeInventory(); slot++) {
             slottedItemStack = craftingMatrix.getStackInSlot(slot);
             if (slottedItemStack != null) {
-                if (slottedItemStack.getItem() instanceof ItemTool) {
+                if (slottedItemStack.getItem() instanceof ItemSword) {
                     numberOfTools++;
                     toolSlotNumber = slot;
                 }
@@ -46,25 +46,27 @@ public class SharpenedTool implements IRecipe {
         return  numberOfTools == 1 && numberOfEnchants == 1;
     }
 
-    /* (non-Javadoc)
+    /**
+     * Adds the sharpness enchantment to any item of type ItemSword.
      * @see net.minecraft.item.crafting.IRecipe#getCraftingResult(net.minecraft.inventory.InventoryCrafting)
      */
     @Override
     public ItemStack getCraftingResult(InventoryCrafting craftingMatrix) {
-        ItemStack sharpenedTool = craftingMatrix.getStackInSlot(toolSlotNumber);
+        ItemStack sharpenedTool = craftingMatrix.getStackInSlot(toolSlotNumber).copy();
+        //Always adds enchantment, need to check if it already is on item
         sharpenedTool.addEnchantment(Enchantment.sharpness, 1);
         return sharpenedTool;
     }
 
-    /* (non-Javadoc)
+    /**
      * @see net.minecraft.item.crafting.IRecipe#getRecipeSize()
      */
     @Override
     public int getRecipeSize() {
-        return 1;
+        return 2;
     }
 
-    /* (non-Javadoc)
+    /**
      * @see net.minecraft.item.crafting.IRecipe#getRecipeOutput()
      */
     @Override
