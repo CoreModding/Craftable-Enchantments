@@ -5,6 +5,7 @@
   */
 package info.coremodding.craftenchants.crafting;
 
+import net.minecraft.enchantment.Enchantment;
 import net.minecraft.inventory.InventoryCrafting;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
@@ -13,11 +14,13 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 import net.minecraft.item.crafting.IRecipe;
 import net.minecraft.world.World;
-
 import info.coremodding.craftenchants.item.ItemCE;
 
 public class EnchantedItem implements IRecipe {
-    private int enchantableItemSlot;
+    private ItemStack enchantableItem;
+    private ItemCE enchantingItem;
+    private Enchantment enchantType;
+    private int enchantLevel;
     private boolean containsSword = false;
     private boolean containsArmor = false;
     private boolean containsBow = false;
@@ -39,9 +42,16 @@ public class EnchantedItem implements IRecipe {
                 containsArmor = itemInSlot instanceof ItemArmor;
                 containsBow = itemInSlot instanceof ItemBow;
                 containsEnchant = itemInSlot instanceof ItemCE;
+                
+                if (containsSword || containsArmor || containsBow) {
+                	enchantableItem = slottedItemStack.copy();
+                }
+                if (containsEnchant) {
+                	enchantingItem = (ItemCE)slottedItemStack.getItem();
+                }
             }
         }
-        return false;
+        return containsEnchant && (containsSword || containsArmor || containsBow);
     }
 
     /**
@@ -49,11 +59,10 @@ public class EnchantedItem implements IRecipe {
      */
     @Override
     public ItemStack getCraftingResult(InventoryCrafting inventorycrafting) {
-        // TODO Implement method getCraftingResult
-        return null;
+        return applyEnchantment();
     }
 
-    /**
+	/**
      * @see net.minecraft.item.crafting.IRecipe#getRecipeSize()
      */
     @Override
@@ -69,6 +78,17 @@ public class EnchantedItem implements IRecipe {
     public ItemStack getRecipeOutput() {
         // TODO Implement method getRecipeOutput
         return null;
+    }
+    
+    private ItemStack applyEnchantment() {
+    	if (enchantableItem.isItemEnchanted()) {
+    		enchantableItem = null;
+    	} else {
+    		enchantType = enchantingItem.getEnchantType();
+    		enchantLevel = enchantingItem.getEnchantLevel();
+    		enchantableItem.addEnchantment(enchantType, enchantLevel);
+    	}
+    	return enchantableItem;
     }
 
 }
