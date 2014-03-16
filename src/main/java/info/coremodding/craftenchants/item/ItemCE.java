@@ -5,15 +5,17 @@
  */
 package info.coremodding.craftenchants.item;
 
+import info.coremodding.craftenchants.library.Reference;
+import info.coremodding.craftenchants.proxy.Proxy;
 import net.minecraft.client.renderer.texture.IconRegister;
+import net.minecraft.enchantment.Enchantment;
 import net.minecraft.item.Item;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-import info.coremodding.craftenchants.library.Reference;
-import info.coremodding.craftenchants.proxy.Proxy;
-
 public class ItemCE extends Item {
+	private Enchantment enchantType;
+	private int enchantLevel;
 
     public ItemCE(int id) {
         super(id);
@@ -21,12 +23,33 @@ public class ItemCE extends Item {
         setName("");
     }
 
-    public void setName(String unlocalName) {
+    protected void setName(String unlocalName) {
         setUnlocalizedName(Reference.MOD_ID + ":" + unlocalName);
     }
     
     public String getName() {
         return this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(Reference.MOD_ID));
+    }
+    
+    protected void setEnchant(Enchantment enchantType, int enchantLevel) {
+    	setEnchantType(enchantType);
+    	setEnchantLevel(enchantLevel);
+    }
+    
+    private void setEnchantType(Enchantment enchantType) {
+    	this.enchantType = enchantType;
+    }
+    
+    public Enchantment getEnchantType() {
+    	return this.enchantType;
+    }
+    
+    private void setEnchantLevel(int enchantLevel) {
+    	this.enchantLevel = enchantLevel;
+    }
+    
+    public int getEnchantLevel() {
+    	return this.enchantLevel;
     }
     
     @Override

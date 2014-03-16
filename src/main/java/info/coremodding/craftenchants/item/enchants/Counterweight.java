@@ -5,8 +5,8 @@
   */
 package info.coremodding.craftenchants.item.enchants;
 
+import net.minecraft.enchantment.Enchantment;
 import net.minecraft.item.EnumToolMaterial;
-
 import info.coremodding.craftenchants.item.ItemCE;
 
 public class Counterweight extends ItemCE {
@@ -20,6 +20,7 @@ public class Counterweight extends ItemCE {
         super(id);
         this.enchantMaterial = enchantMaterial;
         setName(this.enchantMaterial.toString().toLowerCase() + "counterweight");
+        setEnchant(Enchantment.knockback, getEnchantLevel());
     }
     
     public int getEnchantLevel() {

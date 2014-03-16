@@ -5,12 +5,14 @@
  */
 package info.coremodding.craftenchants.item.enchants;
 
+import net.minecraft.enchantment.Enchantment;
 import info.coremodding.craftenchants.item.ItemCE;
 
 public class Snorkle extends ItemCE {
     public Snorkle(int id) {
         super(id);
         setName("snorkle");
+        setEnchant(Enchantment.respiration, 2);
     }
 
 }

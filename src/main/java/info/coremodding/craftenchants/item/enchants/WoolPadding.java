@@ -5,12 +5,14 @@
  */
 package info.coremodding.craftenchants.item.enchants;
 
+import net.minecraft.enchantment.Enchantment;
 import info.coremodding.craftenchants.item.ItemCE;
 
 public class WoolPadding extends ItemCE {
     public WoolPadding(int id) {
         super(id);
         setName("woolpadding");
+        setEnchant(Enchantment.featherFalling, 2);
     }
 
 }

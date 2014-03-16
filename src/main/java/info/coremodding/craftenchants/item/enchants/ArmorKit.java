@@ -5,6 +5,7 @@
  */
 package info.coremodding.craftenchants.item.enchants;
 
+import net.minecraft.enchantment.Enchantment;
 import info.coremodding.craftenchants.item.ItemCE;
 
 public class ArmorKit extends ItemCE {
@@ -12,6 +13,7 @@ public class ArmorKit extends ItemCE {
     public ArmorKit(int id) {
         super(id);
         setName("armorkit");
+        setEnchant(Enchantment.unbreaking, 1);
     }
 
 }
