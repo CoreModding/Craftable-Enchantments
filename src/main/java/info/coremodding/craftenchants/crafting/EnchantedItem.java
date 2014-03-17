@@ -38,15 +38,20 @@ public class EnchantedItem implements IRecipe {
             slottedItemStack = craftingMatrix.getStackInSlot(slot);
             if (slottedItemStack != null) {
                 Item itemInSlot = slottedItemStack.getItem();
-                containsSword = itemInSlot instanceof ItemSword;
-                containsArmor = itemInSlot instanceof ItemArmor;
-                containsBow = itemInSlot instanceof ItemBow;
-                containsEnchant = itemInSlot instanceof ItemCE;
-                
-                if (containsSword || containsArmor || containsBow) {
+                if (itemInSlot instanceof ItemSword) {
+                	containsSword = true;
                 	enchantableItem = slottedItemStack.copy();
                 }
-                if (containsEnchant) {
+                if (itemInSlot instanceof ItemArmor) {
+                	containsArmor = true;
+                	enchantableItem = slottedItemStack.copy();
+                }
+                if (itemInSlot instanceof ItemBow) {
+                	containsBow = true;
+                	enchantableItem = slottedItemStack.copy();
+                }
+                if (itemInSlot instanceof ItemCE) {
+                	containsEnchant = true;
                 	enchantingItem = (ItemCE)slottedItemStack.getItem();
                 }
             }
@@ -75,7 +80,7 @@ public class EnchantedItem implements IRecipe {
      * @see net.minecraft.item.crafting.IRecipe#getRecipeOutput()
      */
     @Override
-    public ItemStack getRecipeOutput() {
+    public ItemStack getRecipeOutput() { 
         // TODO Implement method getRecipeOutput
         return null;
     }
@@ -87,6 +92,7 @@ public class EnchantedItem implements IRecipe {
     		enchantType = enchantingItem.getEnchantType();
     		enchantLevel = enchantingItem.getEnchantLevel();
     		enchantableItem.addEnchantment(enchantType, enchantLevel);
+    		containsArmor = containsBow = containsSword = containsEnchant = false;
     	}
     	return enchantableItem;
     }
