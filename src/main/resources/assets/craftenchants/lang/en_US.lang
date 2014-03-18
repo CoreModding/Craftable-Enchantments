@@ -3,6 +3,8 @@ itemGroup.craftenchants=Craftable Enchants
 #Item localizations
 item.craftenchants:armorkit.name=Armor Kit
 item.craftenchants:blastresistpad.name=Blast Resist Pad
+item.craftenchants:fireoil.name=Fire Oil
+item.craftenchants:flameresistantcream.name=Flame Resistant Cream
 item.craftenchants:ironcounterweight.name=Iron Counterweight
 item.craftenchants:ironstuds.name=Iron Studs
 item.craftenchants:reinforcednock.name=Reinforced Nock
