@@ -5,6 +5,8 @@
   */
 package info.coremodding.craftenchants.handler;
 
+import info.coremodding.craftenchants.crafting.EnchantArmor;
+import info.coremodding.craftenchants.crafting.EnchantBow;
 import info.coremodding.craftenchants.crafting.EnchantSword;
 import info.coremodding.craftenchants.crafting.VanillaRecipes;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -13,6 +15,8 @@ public class Crafting {
     
     public static void initialize() {
         GameRegistry.addRecipe(new EnchantSword());
+        GameRegistry.addRecipe(new EnchantBow());
+        GameRegistry.addRecipe(new EnchantArmor());
         
         VanillaRecipes.addRecipes();
     }
