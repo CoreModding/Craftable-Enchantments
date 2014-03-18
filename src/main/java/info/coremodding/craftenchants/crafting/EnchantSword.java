@@ -44,6 +44,12 @@ public class EnchantSword implements IRecipe {
 	public ItemStack getCraftingResult(InventoryCrafting inventorycrafting) {
 		return applyEnchantment();
 	}
+	
+	private ItemStack applyEnchantment() {
+		if (!enchantableItem.isItemEnchanted())
+			enchantableItem.addEnchantment(enchantingItem.getEnchantType(), enchantingItem.getEnchantLevel());
+		return enchantableItem;
+	}
 
 	@Override
 	public int getRecipeSize() {
@@ -55,10 +61,5 @@ public class EnchantSword implements IRecipe {
 	public ItemStack getRecipeOutput() {
 		// TODO Auto-generated method stub
 		return null;
-	}
-	private ItemStack applyEnchantment() {
-		if (!enchantableItem.isItemEnchanted())
-			enchantableItem.addEnchantment(enchantingItem.getEnchantType(), enchantingItem.getEnchantLevel());
-		return enchantableItem;
 	}
 }
