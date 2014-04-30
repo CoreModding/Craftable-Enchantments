@@ -20,6 +20,7 @@ public class ModIDs {
             public static final int snorkle = 16169;
             public static final int stoneCounterweight = 16170;
             public static final int woolPadding = 16171;
+            public static final int horseHair = 16172;
         }
 
         // Current IDs
@@ -33,5 +34,6 @@ public class ModIDs {
         public static int snorkle;
         public static int stoneCounterweight;
         public static int woolPadding;
+        public static int horseHair;
     }
 }

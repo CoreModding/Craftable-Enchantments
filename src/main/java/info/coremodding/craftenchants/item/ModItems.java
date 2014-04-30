@@ -10,6 +10,7 @@ import info.coremodding.craftenchants.item.enchants.BlastResistPad;
 import info.coremodding.craftenchants.item.enchants.Counterweight;
 import info.coremodding.craftenchants.item.enchants.FireOil;
 import info.coremodding.craftenchants.item.enchants.FlameResistantCream;
+import info.coremodding.craftenchants.item.enchants.HorseHair;
 import info.coremodding.craftenchants.item.enchants.ReinforcedNock;
 import info.coremodding.craftenchants.item.enchants.SharpeningStone;
 import info.coremodding.craftenchants.item.enchants.Snorkle;
@@ -41,6 +42,7 @@ public class ModItems {
     public static ItemCE snorkle;
     public static ItemCE stoneCounterweight;
     public static ItemCE woolPadding;
+    public static ItemCE horseHair;
 
     public static void initialize() {
         createItems();
@@ -59,6 +61,7 @@ public class ModItems {
         items.add(snorkle = new Snorkle(ModIDs.Items.Default.snorkle));
         items.add(stoneCounterweight = new Counterweight(ModIDs.Items.Default.stoneCounterweight, EnumToolMaterial.STONE));
         items.add(woolPadding = new WoolPadding(ModIDs.Items.Default.woolPadding));
+        items.add(horseHair = new HorseHair(ModIDs.Items.Default.horseHair));
     }
 
     private static void registerItems() {
