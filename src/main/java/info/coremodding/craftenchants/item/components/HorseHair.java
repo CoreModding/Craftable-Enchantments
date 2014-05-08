@@ -1,4 +1,4 @@
-package info.coremodding.craftenchants.item.enchants;
+package info.coremodding.craftenchants.item.components;
 
 import net.minecraft.enchantment.Enchantment;
 import info.coremodding.craftenchants.item.ItemCE;

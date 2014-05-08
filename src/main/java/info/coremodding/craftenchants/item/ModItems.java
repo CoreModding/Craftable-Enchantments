@@ -5,12 +5,12 @@
  */
 package info.coremodding.craftenchants.item;
 
+import info.coremodding.craftenchants.item.components.HorseHair;
 import info.coremodding.craftenchants.item.enchants.ArmorKit;
 import info.coremodding.craftenchants.item.enchants.BlastResistPad;
 import info.coremodding.craftenchants.item.enchants.Counterweight;
 import info.coremodding.craftenchants.item.enchants.FireOil;
 import info.coremodding.craftenchants.item.enchants.FlameResistantCream;
-import info.coremodding.craftenchants.item.enchants.HorseHair;
 import info.coremodding.craftenchants.item.enchants.ReinforcedNock;
 import info.coremodding.craftenchants.item.enchants.SharpeningStone;
 import info.coremodding.craftenchants.item.enchants.Snorkle;
