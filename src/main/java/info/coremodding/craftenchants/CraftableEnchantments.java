@@ -5,17 +5,17 @@
  */
 package info.coremodding.craftenchants;
 
-import info.coremodding.craftenchants.event.LivingDropsEvent;
-import info.coremodding.craftenchants.event.PreInitializer;
-import info.coremodding.craftenchants.library.Reference;
-import info.coremodding.craftenchants.proxy.Proxy;
-import net.minecraftforge.common.MinecraftForge;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+
+import info.coremodding.craftenchants.event.init.Initializer;
+import info.coremodding.craftenchants.event.init.PreInitializer;
+import info.coremodding.craftenchants.library.Reference;
+import info.coremodding.craftenchants.proxy.Proxy;
 
 /**
  * The main mod class
@@ -45,9 +45,7 @@ public class CraftableEnchantments {
     }
     
     @EventHandler
-    public void modInit(FMLInitializationEvent event) {
-
-    MinecraftForge.EVENT_BUS.register(new LivingDropsEvent());
-
+    public void onInitialization(FMLInitializationEvent event) {
+        Initializer.handle(event);
     }
 }
