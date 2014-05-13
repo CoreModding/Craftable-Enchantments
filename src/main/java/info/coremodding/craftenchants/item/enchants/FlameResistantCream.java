@@ -5,15 +5,13 @@
  */
 package info.coremodding.craftenchants.item.enchants;
 
-import net.minecraft.enchantment.Enchantment;
-import info.coremodding.craftenchants.item.ItemCE;
+import info.coremodding.craftenchants.item.PotionCE;
 
-public class FlameResistantCream extends ItemCE {
+public class FlameResistantCream extends PotionCE {
 
 	public FlameResistantCream(int id) {
-		super(id);
+		super(id, false, 0);
 		setName("flameresistantcream");
-		setEnchant(Enchantment.fireProtection, 2);
 	}
 
 }

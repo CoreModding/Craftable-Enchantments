@@ -5,15 +5,13 @@
  */
 package info.coremodding.craftenchants.item.enchants;
 
-import net.minecraft.enchantment.Enchantment;
-import info.coremodding.craftenchants.item.ItemCE;
+import info.coremodding.craftenchants.item.PotionCE;
 
-public class FireOil extends ItemCE {
+public class FireOil extends PotionCE {
 
 	public FireOil(int id) {
-		super(id);
+		super(id, false, 0);
 		setName("fireoil");
-		setEnchant(Enchantment.fireAspect, 1);
 	}
 
 }
