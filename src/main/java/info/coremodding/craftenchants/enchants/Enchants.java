@@ -5,10 +5,14 @@
   */
 package info.coremodding.craftenchants.enchants;
 
+import java.lang.reflect.Field;
+import java.lang.reflect.Modifier;
 import java.util.HashSet;
 import java.util.Set;
 
 import net.minecraft.item.EnumToolMaterial;
+import net.minecraft.potion.Potion;
+import net.minecraftforge.common.MinecraftForge;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 import info.coremodding.craftenchants.enchants.item.ArmorKit;
@@ -78,8 +82,8 @@ public class Enchants {
         public static PotionCE flameResistantCream;
         
         public static void initialize() {
-            createPotions();
             registerPotions();
+            createPotions();
         }
         
         private static void createPotions() {
