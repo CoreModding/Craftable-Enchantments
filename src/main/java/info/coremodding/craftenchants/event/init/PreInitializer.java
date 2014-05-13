@@ -7,8 +7,8 @@ package info.coremodding.craftenchants.event.init;
 
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
+import info.coremodding.craftenchants.enchants.item.ModItems;
 import info.coremodding.craftenchants.handler.Crafting;
-import info.coremodding.craftenchants.item.ModItems;
 
 public final class PreInitializer {
 

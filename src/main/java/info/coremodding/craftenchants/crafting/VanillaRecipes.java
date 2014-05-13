@@ -8,7 +8,7 @@ package info.coremodding.craftenchants.crafting;
 import net.minecraft.item.ItemStack;
 import cpw.mods.fml.common.registry.GameRegistry;
 
-import info.coremodding.craftenchants.item.ModItems;
+import info.coremodding.craftenchants.enchants.item.ModItems;
 import info.coremodding.craftenchants.library.ModRecipes;
 
 public class VanillaRecipes {

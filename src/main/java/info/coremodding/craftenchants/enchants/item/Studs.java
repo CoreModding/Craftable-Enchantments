@@ -7,7 +7,6 @@ package info.coremodding.craftenchants.enchants.item;
 
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.item.EnumToolMaterial;
-import info.coremodding.craftenchants.item.ItemCE;
 
 public class Studs extends ItemCE {
     private EnumToolMaterial enchantMaterial;
