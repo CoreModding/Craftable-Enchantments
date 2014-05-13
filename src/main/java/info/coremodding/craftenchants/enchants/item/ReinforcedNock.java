@@ -3,16 +3,16 @@
  * http://www.gnu.org/licenses/gpl.html
  * http://www.gnu.org/licenses/lgpl.html
  */
-package info.coremodding.craftenchants.item.enchants;
+package info.coremodding.craftenchants.enchants.item;
 
 import net.minecraft.enchantment.Enchantment;
 import info.coremodding.craftenchants.item.ItemCE;
 
-public class Snorkle extends ItemCE {
-    public Snorkle(int id) {
+public class ReinforcedNock extends ItemCE {
+    public ReinforcedNock(int id) {
         super(id);
-        setName("snorkle");
-        setEnchant(Enchantment.respiration, 2);
+        setName("reinforcednock");
+        setEnchant(Enchantment.power, 2);
     }
 
 }

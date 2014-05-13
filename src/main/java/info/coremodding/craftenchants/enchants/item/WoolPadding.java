@@ -3,16 +3,16 @@
  * http://www.gnu.org/licenses/gpl.html
  * http://www.gnu.org/licenses/lgpl.html
  */
-package info.coremodding.craftenchants.item.enchants;
+package info.coremodding.craftenchants.enchants.item;
 
 import net.minecraft.enchantment.Enchantment;
 import info.coremodding.craftenchants.item.ItemCE;
 
-public class BlastResistPad extends ItemCE {
-    public BlastResistPad(int id) {
+public class WoolPadding extends ItemCE {
+    public WoolPadding(int id) {
         super(id);
-        setName("blastresistpad");
-        setEnchant(Enchantment.blastProtection, 2);
+        setName("woolpadding");
+        setEnchant(Enchantment.featherFalling, 2);
     }
 
 }

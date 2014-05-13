@@ -5,8 +5,9 @@
   */
 package info.coremodding.craftenchants.crafting;
 
+import info.coremodding.craftenchants.enchants.item.SharpeningStone;
 import info.coremodding.craftenchants.item.ItemCE;
-import info.coremodding.craftenchants.item.enchants.SharpeningStone;
+
 import net.minecraft.inventory.InventoryCrafting;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

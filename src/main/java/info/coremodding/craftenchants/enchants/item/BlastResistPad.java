@@ -3,16 +3,16 @@
  * http://www.gnu.org/licenses/gpl.html
  * http://www.gnu.org/licenses/lgpl.html
  */
-package info.coremodding.craftenchants.item.enchants;
+package info.coremodding.craftenchants.enchants.item;
 
 import net.minecraft.enchantment.Enchantment;
 import info.coremodding.craftenchants.item.ItemCE;
 
-public class SharpeningStone extends ItemCE {
-    
-    public SharpeningStone(int id) {
+public class BlastResistPad extends ItemCE {
+    public BlastResistPad(int id) {
         super(id);
-        setName("sharpeningstone");
-        setEnchant(Enchantment.sharpness, 1);
+        setName("blastresistpad");
+        setEnchant(Enchantment.blastProtection, 2);
     }
+
 }
