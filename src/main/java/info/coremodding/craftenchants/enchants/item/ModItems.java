@@ -11,7 +11,7 @@ import java.util.Set;
 import net.minecraft.item.EnumToolMaterial;
 import cpw.mods.fml.common.registry.GameRegistry;
 
-import info.coremodding.craftenchants.item.components.HorseHair;
+import info.coremodding.craftenchants.enchants.item.component.HorseHair;
 import info.coremodding.craftenchants.library.ModIDs;
 
 public class ModItems {
