@@ -5,7 +5,6 @@
  */
 package info.coremodding.craftenchants.enchants.potion;
 
-import info.coremodding.craftenchants.item.PotionCE;
 
 public class FireOil extends PotionCE {
 
