@@ -3,15 +3,15 @@
  * http://www.gnu.org/licenses/gpl.html
  * http://www.gnu.org/licenses/lgpl.html
  */
-package info.coremodding.craftenchants.item.enchants;
+package info.coremodding.craftenchants.enchants.potion;
 
 import info.coremodding.craftenchants.item.PotionCE;
 
-public class FlameResistantCream extends PotionCE {
+public class FireOil extends PotionCE {
 
-	public FlameResistantCream(int id) {
+	public FireOil(int id) {
 		super(id, false, 0);
-		setName("flameresistantcream");
+		setName("fireoil");
 	}
 
 }

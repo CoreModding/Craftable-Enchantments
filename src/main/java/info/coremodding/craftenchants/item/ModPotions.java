@@ -8,8 +8,8 @@ package info.coremodding.craftenchants.item;
 import java.util.HashSet;
 import java.util.Set;
 
-import info.coremodding.craftenchants.item.enchants.FireOil;
-import info.coremodding.craftenchants.item.enchants.FlameResistantCream;
+import info.coremodding.craftenchants.enchants.potion.FireOil;
+import info.coremodding.craftenchants.enchants.potion.FlameResistantCream;
 import info.coremodding.craftenchants.library.ModIDs;
 
 public class ModPotions {
