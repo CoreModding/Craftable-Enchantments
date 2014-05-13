@@ -11,8 +11,6 @@ public class ModIDs {
         public static final class Default {
             public static final int armorKit = 16161;
             public static final int blastResistPad = 16162;
-            public static final int fireOil = 16163;
-            public static final int flameResistantOil = 16164;
             public static final int ironCounterweight = 16165;
             public static final int ironStuds = 16166;
             public static final int reinforcedNock = 16167;
@@ -26,8 +24,7 @@ public class ModIDs {
         // Current IDs
         public static int armorKit;
         public static int blastResistPad;
-        public static int fireOil;
-        public static int flameResistantOil;
+        
         public static int ironCounterweight;
         public static int ironStuds;
         public static int sharpeningStone;
@@ -35,5 +32,16 @@ public class ModIDs {
         public static int stoneCounterweight;
         public static int woolPadding;
         public static int horseHair;
+    }
+    
+    public static class Potions {
+        public static final class Default {
+            public static final int fireOil = 16163;
+            public static final int flameResistantCream = 16164;
+        }
+        
+        //Current IDs
+        public static int fireOil;
+        public static int flameResistantCream;
     }
 }
