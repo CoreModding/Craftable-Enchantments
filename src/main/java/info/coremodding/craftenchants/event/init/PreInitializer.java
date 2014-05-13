@@ -7,13 +7,14 @@ package info.coremodding.craftenchants.event.init;
 
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
-import info.coremodding.craftenchants.enchants.ModItems;
+import info.coremodding.craftenchants.enchants.Enchants;
 import info.coremodding.craftenchants.handler.Crafting;
 
 public final class PreInitializer {
 
     public static void handle(FMLPreInitializationEvent event) {
-        ModItems.initialize();
+        Enchants.Items.initialize();
+        Enchants.Potions.initialize();
         Crafting.initialize();;
     }
 

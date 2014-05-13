@@ -2,11 +2,11 @@ package info.coremodding.craftenchants.event;
 
 import java.util.Random;
 
-import info.coremodding.craftenchants.enchants.ModItems;
-
 import net.minecraft.entity.passive.EntityHorse;
 import net.minecraftforge.event.ForgeSubscribe;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
+
+import info.coremodding.craftenchants.enchants.Enchants;
 
 public class LivingDrops {
 
@@ -18,7 +18,7 @@ public class LivingDrops {
 			int dropChance = random.nextInt(100);
 			if(dropChance < 5) {
 			    int dropCount = random.nextInt(3) + 1;
-			    event.entity.dropItem(ModItems.horseHair.itemID, dropCount);
+			    event.entity.dropItem(Enchants.Items.horseHair.itemID, dropCount);
 			}
 		}
 	}
