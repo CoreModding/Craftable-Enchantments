@@ -5,6 +5,8 @@
  */
 package info.coremodding.craftenchants.enchants.item;
 
+import info.coremodding.craftenchants.enchants.ItemCE;
+
 import net.minecraft.enchantment.Enchantment;
 
 public class Snorkle extends ItemCE {

@@ -5,7 +5,7 @@
   */
 package info.coremodding.craftenchants.crafting;
 
-import info.coremodding.craftenchants.enchants.item.ItemCE;
+import info.coremodding.craftenchants.enchants.ItemCE;
 import info.coremodding.craftenchants.enchants.item.SharpeningStone;
 
 import net.minecraft.inventory.InventoryCrafting;

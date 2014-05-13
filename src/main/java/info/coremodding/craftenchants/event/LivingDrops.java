@@ -2,7 +2,7 @@ package info.coremodding.craftenchants.event;
 
 import java.util.Random;
 
-import info.coremodding.craftenchants.enchants.item.ModItems;
+import info.coremodding.craftenchants.enchants.ModItems;
 
 import net.minecraft.entity.passive.EntityHorse;
 import net.minecraftforge.event.ForgeSubscribe;

@@ -3,11 +3,13 @@
   * http://www.gnu.org/licenses/gpl.html
   * http://www.gnu.org/licenses/lgpl.html
   */
-package info.coremodding.craftenchants.enchants.potion;
+package info.coremodding.craftenchants.enchants;
 
 import java.util.HashSet;
 import java.util.Set;
 
+import info.coremodding.craftenchants.enchants.potion.FireOil;
+import info.coremodding.craftenchants.enchants.potion.FlameResistantCream;
 import info.coremodding.craftenchants.library.ModIDs;
 
 public class ModPotions {
