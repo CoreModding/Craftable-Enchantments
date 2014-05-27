@@ -14,8 +14,8 @@ import info.coremodding.craftenchants.proxy.CommonProxy;
 
 public class SharpeningStone extends Item {
     public SharpeningStone() {
-	super();
-	setUnlocalizedName("sharpeningstone");
-	setCreativeTab(CommonProxy.tab);
+    	super();
+    	setUnlocalizedName("sharpeningstone");
+    	setCreativeTab(CommonProxy.tab);
     }
 }

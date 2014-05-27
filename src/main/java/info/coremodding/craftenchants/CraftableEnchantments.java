@@ -29,6 +29,6 @@ public class CraftableEnchantments {
     
     @EventHandler
     public void preInitialization(FMLPreInitializationEvent preEvent) {
-	PreInitializer.handle(preEvent);
+        PreInitializer.handle(preEvent);
     }
 }
