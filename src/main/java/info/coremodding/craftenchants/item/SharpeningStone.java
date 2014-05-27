@@ -1,21 +1,18 @@
-/** 
-  * Craftable Enchantments
-  * SharpeningStone.java
-  * //TODO File description
-  * @copyright (C) 2014
-  * @author Kevin O'Brien (AKA ShooShoSha)
-  * @license <a href="http://www.gnu.org/licenses/">GNU Lesser General Public License</a>
-  */
+/**
+ * Copyright 2014 by CoreModding under GNU Lesser General Public License (LGPLv3)
+ * http://www.gnu.org/licenses/gpl.html
+ * http://www.gnu.org/licenses/lgpl.html
+ */
 package info.coremodding.craftenchants.item;
 
 import net.minecraft.item.Item;
 
-import info.coremodding.craftenchants.proxy.CommonProxy;
+import info.coremodding.craftenchants.proxy.Proxy;
 
 public class SharpeningStone extends Item {
     public SharpeningStone() {
     	super();
     	setUnlocalizedName("sharpeningstone");
-    	setCreativeTab(CommonProxy.tab);
+    	setCreativeTab(Proxy.tabMain);
     }
 }

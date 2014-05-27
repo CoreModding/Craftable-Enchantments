@@ -16,7 +16,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
 import info.coremodding.craftenchants.event.PreInitializer;
 import info.coremodding.craftenchants.library.Reference;
-import info.coremodding.craftenchants.proxy.CommonProxy;
+import info.coremodding.craftenchants.proxy.Proxy;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME)
 public class CraftableEnchantments {
@@ -24,7 +24,7 @@ public class CraftableEnchantments {
     public static CraftableEnchantments instance;
     
     @SidedProxy(clientSide = Reference.CLIENT_PROXY, serverSide = Reference.SERVER_PROXY)
-    public static CommonProxy proxy;
+    public static Proxy proxy;
     
     
     @EventHandler
