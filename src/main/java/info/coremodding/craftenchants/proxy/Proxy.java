@@ -1,14 +1,14 @@
-/** 
-  * Craftable Enchantments
-  * Proxy.java
-  * //TODO File description
-  * @copyright (C) 2014
-  * @author Kevin O'Brien (AKA ShooShoSha)
-  * @license <a href="http://www.gnu.org/licenses/">GNU Lesser General Public License</a>
-  */
+/**
+ * Copyright 2014 by CoreModding under GNU Lesser General Public License (LGPLv3)
+ * http://www.gnu.org/licenses/gpl.html
+ * http://www.gnu.org/licenses/lgpl.html
+ */
 package info.coremodding.craftenchants.proxy;
 
+import net.minecraft.creativetab.CreativeTabs;
+
+import info.coremodding.craftenchants.library.CECreativeTab;
 
 public interface Proxy {
-    
+    public static final CreativeTabs tabMain = CECreativeTab.getMainTab();
 }
