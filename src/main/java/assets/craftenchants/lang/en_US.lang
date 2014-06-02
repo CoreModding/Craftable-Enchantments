@@ -1,5 +1,4 @@
-itemGroup.craftenchants.name=Craftable Enchantments
+itemGroup.craftenchants=Craftable Enchantments
 
 #Item localizations
-item.craftenchants:sharpeningstone.name=Sharpening Stone
 item.sharpeningstone.name=Sharpening Stone
