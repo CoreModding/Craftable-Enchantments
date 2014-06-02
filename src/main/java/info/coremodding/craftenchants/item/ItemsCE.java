@@ -5,38 +5,30 @@
  */
 package info.coremodding.craftenchants.item;
 
-import info.coremodding.craftenchants.item.crafting.CEItemRecipe;
-import info.coremodding.craftenchants.item.enchants.SharpeningStone;
+import java.util.HashSet;
+import java.util.Set;
 
-import net.minecraft.enchantment.Enchantment;
-import net.minecraft.enchantment.EnchantmentData;
-import net.minecraft.init.Items;
-import net.minecraft.item.Item;
 import cpw.mods.fml.common.registry.GameRegistry;
 
+import info.coremodding.craftenchants.item.enchants.SharpeningStone;
+
 public class ItemsCE {
-    public static Item sharpeningStone;
+    public static Set<ItemCE> items = new HashSet<>();
     
+    public static ItemCE sharpeningStone;
+
     public static void initialize() {
-	createItems();
-	registerItems();
-	addRecipes();
+        createItems();
+        registerItems();
     }
-    
+
     public static void createItems() {
-	sharpeningStone = new SharpeningStone();
+        items.add(sharpeningStone = new SharpeningStone());
     }
-    
+
     public static void registerItems() {
-	GameRegistry.registerItem(sharpeningStone, sharpeningStone.getUnlocalizedName());
-    }
-    
-    public static void addRecipes() {
-	GameRegistry.addRecipe(Items.enchanted_book.getEnchantedItemStack(new EnchantmentData(Enchantment.sharpness, 1)),
-		CEItemRecipe.sharpeningStone);
-	GameRegistry.addRecipe(Items.enchanted_book.getEnchantedItemStack(new EnchantmentData(Enchantment.protection, 2)),
-		CEItemRecipe.armorKit);
-	GameRegistry.addRecipe(Items.enchanted_book.getEnchantedItemStack(new EnchantmentData(Enchantment.featherFalling, 2)),
-		CEItemRecipe.woolPadding);
+        for(ItemCE item : items) {
+            GameRegistry.registerItem(item, item.getUnlocalizedName());
+        }
     }
 }

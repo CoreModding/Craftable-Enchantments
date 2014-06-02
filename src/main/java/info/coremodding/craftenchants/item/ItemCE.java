@@ -11,7 +11,6 @@ import net.minecraft.item.Item;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-import info.coremodding.craftenchants.library.Reference;
 import info.coremodding.craftenchants.proxy.Proxy;
 
 public class ItemCE extends Item {
@@ -21,15 +20,7 @@ public class ItemCE extends Item {
     protected ItemCE(String unlocalName) {
         super();
         setCreativeTab(Proxy.tabMain);
-        setName(unlocalName);
-    }
-    
-    private void setName(String unlocalName) {
-        setUnlocalizedName(Reference.MOD_ID + ":" + unlocalName);
-    }
-    
-    public String getName() {
-        return this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(Reference.MOD_ID));
+        setUnlocalizedName(unlocalName);
     }
     
     protected void setEnchantmentTypeLevel(Enchantment enchantType, int enchantLevel) {
@@ -56,6 +47,6 @@ public class ItemCE extends Item {
     @Override
     @SideOnly(Side.CLIENT)
     public void registerIcons(IIconRegister iconRegister) {
-        this.itemIcon = iconRegister.registerIcon(this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(":")));
+        this.itemIcon = iconRegister.registerIcon(this.getUnlocalizedName());
     }
 }

@@ -12,7 +12,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 public final class PreInitializer {
     
     public static void handle(FMLPreInitializationEvent event) {
-	ItemsCE.initialize();
+        ItemsCE.initialize();
     }
     
 }

@@ -11,4 +11,6 @@ public final class Reference {
 
     public static final String CLIENT_PROXY = "info.coremodding.craftenchants.proxy.ClientProxy";
     public static final String SERVER_PROXY = "info.coremodding.craftenchants.proxy.ServerProxy";
+    
+    public static final String RESOURCE_PREFIX = MOD_ID + ":";
 }
