@@ -11,11 +11,12 @@ import net.minecraft.item.Item;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
+import info.coremodding.craftenchants.item.enchants.Enchants;
 import info.coremodding.craftenchants.proxy.Proxy;
 
-public class ItemCE extends Item {
-    private Enchantment enchantType;
-    private int enchantLevel;
+public abstract class ItemCE extends Item implements Enchants {    
+    protected Enchantment enchantType;
+    protected int enchantLevel;
     
     protected ItemCE(String unlocalName) {
         super();
@@ -23,30 +24,23 @@ public class ItemCE extends Item {
         setUnlocalizedName(unlocalName);
     }
     
-    protected void setEnchantmentTypeLevel(Enchantment enchantType, int enchantLevel) {
-        setEnchantmentType(enchantType);
-        setEnchantmentLevel(enchantLevel);
+    @Override
+    @SideOnly(Side.CLIENT)
+    public void registerIcons(IIconRegister iconRegister) {
+        this.itemIcon = iconRegister.registerIcon(this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf('.') + 1));
     }
     
-    private void setEnchantmentType(Enchantment enchantType) {
-        this.enchantType = enchantType;
+    public boolean hasEnchantment() {
+        return getEnchantmentType() != null && getEnchantmentLevel() > 0;
     }
+    
+    protected abstract void setEnchantment(Enchantment type, int level);
     
     public Enchantment getEnchantmentType() {
         return this.enchantType;
     }
     
-    private void setEnchantmentLevel(int enchantLevel) {
-        this.enchantLevel = enchantLevel;
-    }
-    
     public int getEnchantmentLevel() {
         return this.enchantLevel;
-    }
-    
-    @Override
-    @SideOnly(Side.CLIENT)
-    public void registerIcons(IIconRegister iconRegister) {
-        this.itemIcon = iconRegister.registerIcon(this.getUnlocalizedName());
     }
 }
