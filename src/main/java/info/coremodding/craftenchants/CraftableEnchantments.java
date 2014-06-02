@@ -25,9 +25,8 @@ public class CraftableEnchantments {
     @SidedProxy(clientSide = Proxy.CLIENT, serverSide = Proxy.SERVER)
     public static Proxy proxy;
     
-    
     @EventHandler
-    public void preInitialization(FMLPreInitializationEvent preEvent) {
+    public void preInitialization(FMLPreInitializationEvent preEvent) {        
         PreInitializer.handle(preEvent);
     }
 }
