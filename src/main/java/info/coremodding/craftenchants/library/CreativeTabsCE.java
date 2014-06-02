@@ -5,6 +5,8 @@
  */
 package info.coremodding.craftenchants.library;
 
+import info.coremodding.craftenchants.CraftableEnchantments;
+
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
@@ -12,7 +14,7 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
 public class CreativeTabsCE extends CreativeTabs {
-    private static final CreativeTabsCE mainTab = new CreativeTabsCE(Reference.MOD_ID);
+    private static final CreativeTabsCE mainTab = new CreativeTabsCE(CraftableEnchantments.ID);
     
     /**
      * @param tabLabel is the unlocalized name of the tab

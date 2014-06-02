@@ -12,15 +12,17 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
 import info.coremodding.craftenchants.event.PreInitializer;
-import info.coremodding.craftenchants.library.Reference;
 import info.coremodding.craftenchants.proxy.Proxy;
 
-@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME)
+@Mod(modid = CraftableEnchantments.ID, name = CraftableEnchantments.NAME)
 public class CraftableEnchantments {
-    @Instance(Reference.MOD_ID)
+    public static final String NAME = "Craftable Enchantments";
+    public static final String ID = "craftenchants";
+    
+    @Instance(ID)
     public static CraftableEnchantments instance;
     
-    @SidedProxy(clientSide = Reference.CLIENT_PROXY, serverSide = Reference.SERVER_PROXY)
+    @SidedProxy(clientSide = Proxy.CLIENT, serverSide = Proxy.SERVER)
     public static Proxy proxy;
     
     

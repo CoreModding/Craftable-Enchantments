@@ -10,5 +10,8 @@ import net.minecraft.creativetab.CreativeTabs;
 import info.coremodding.craftenchants.library.CreativeTabsCE;
 
 public interface Proxy {
+    public static final String CLIENT = "info.coremodding.craftenchants.proxy.ClientProxy";
+    public static final String SERVER = "info.coremodding.craftenchants.proxy.ServerProxy";
+    
     public static final CreativeTabs tabMain = CreativeTabsCE.getMainTab();
 }
