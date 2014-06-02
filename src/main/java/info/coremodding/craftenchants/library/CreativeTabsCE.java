@@ -23,7 +23,6 @@ public class CreativeTabsCE extends CreativeTabs {
         super(CreativeTabs.getNextID(), tabLabel);
     }
     
-    /* Accessor methods for tabs */
     public static CreativeTabsCE getMainTab() {
         return mainTab;
     }
