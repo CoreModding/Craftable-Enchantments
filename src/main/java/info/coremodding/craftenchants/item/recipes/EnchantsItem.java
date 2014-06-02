@@ -7,8 +7,11 @@ package info.coremodding.craftenchants.item.recipes;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
+import cpw.mods.fml.common.registry.GameRegistry;
 
-public class Enchants {
+import info.coremodding.craftenchants.item.ItemsCE;
+
+public class EnchantsItem {
   public static final Object[] sharpeningStone = new Object[] {"FFF", "FSF", "FFF", 'F',
       new ItemStack(Items.flint), 'S', new ItemStack(Blocks.stone)};
 
@@ -33,6 +36,10 @@ public class Enchants {
   public static final Object[] snorkle = new Object[] {"GGS", "GGG", "III", 'G', Blocks.glass, 'S',
       Items.reeds, 'I', Items.iron_ingot};
 
-  public static final Object[] reinforcedNock =
-      new Object[] {"H  ", " H ", "  H", 'H', Items.melon};
+  public static final Object[] reinforcedNock = new Object[] {"H  ", " H ", "  H", 'H',
+      ItemsCE.horseHair};
+
+  public static void addRecipes() {
+    GameRegistry.addRecipe(new ItemStack(ItemsCE.sharpeningStone), sharpeningStone);
+  }
 }
