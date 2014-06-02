@@ -9,9 +9,14 @@ import net.minecraft.enchantment.Enchantment;
 
 import info.coremodding.craftenchants.item.ItemCE;
 
-public class SharpeningStone extends ItemCE {
+public class SharpeningStone extends ItemCE implements Enchants {
     public SharpeningStone() {
     	super("sharpeningstone");
-    	setEnchantmentTypeLevel(Enchantment.sharpness, 1);
+    	setEnchantment(Enchantment.sharpness, 1);
+    }
+    @Override
+    protected void setEnchantment(Enchantment type, int level) {
+        this.enchantType = type;
+        this.enchantLevel = level;
     }
 }
