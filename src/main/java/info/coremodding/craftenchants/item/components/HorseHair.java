@@ -9,11 +9,8 @@ import info.coremodding.craftenchants.item.ItemCE;
 
 public class HorseHair extends ItemCE {
 
-    /**
-     * @param unlocalName is the name of the item despite locale
-     */
-    protected HorseHair(String unlocalName) {
-        super(unlocalName);
+    public HorseHair() {
+        super("horsehair");
         setMaxStackSize(16);
     }
 
