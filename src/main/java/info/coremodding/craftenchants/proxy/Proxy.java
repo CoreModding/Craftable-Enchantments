@@ -7,8 +7,8 @@ package info.coremodding.craftenchants.proxy;
 
 import net.minecraft.creativetab.CreativeTabs;
 
-import info.coremodding.craftenchants.library.CECreativeTab;
+import info.coremodding.craftenchants.library.CreativeTabsCE;
 
 public interface Proxy {
-    public static final CreativeTabs tabMain = CECreativeTab.getMainTab();
+    public static final CreativeTabs tabMain = CreativeTabsCE.getMainTab();
 }

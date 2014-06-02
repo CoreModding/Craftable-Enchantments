@@ -11,18 +11,18 @@ import net.minecraft.item.Item;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class CECreativeTab extends CreativeTabs {
-    private static final CECreativeTab mainTab = new CECreativeTab(Reference.MOD_ID);
+public class CreativeTabsCE extends CreativeTabs {
+    private static final CreativeTabsCE mainTab = new CreativeTabsCE(Reference.MOD_ID);
     
     /**
      * @param tabLabel is the unlocalized name of the tab
      */
-    private CECreativeTab(String tabLabel) {
+    private CreativeTabsCE(String tabLabel) {
         super(CreativeTabs.getNextID(), tabLabel);
     }
     
     /* Accessor methods for tabs */
-    public static CECreativeTab getMainTab() {
+    public static CreativeTabsCE getMainTab() {
         return mainTab;
     }
     

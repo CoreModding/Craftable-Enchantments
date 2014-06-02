@@ -1,4 +1,4 @@
-itemGroup.craftenchants=Craftable Enchants
+itemGroup.craftenchants.name=Craftable Enchantments
 
 #Item localizations
 item.craftenchants:armorkit.name=Armor Kit
