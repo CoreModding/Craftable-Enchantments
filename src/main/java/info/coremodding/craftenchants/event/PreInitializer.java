@@ -6,11 +6,15 @@ package info.coremodding.craftenchants.event;
 
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
+import info.coremodding.craftenchants.potion.PotionsCE;
+
 public final class PreInitializer {
 
   public static void handle(FMLPreInitializationEvent event) {
     // TODO configuration handler
     // TODO version handler
+    PotionsCE.initialize();
+    
   }
 
 }
