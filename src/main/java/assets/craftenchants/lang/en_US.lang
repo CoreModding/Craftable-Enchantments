@@ -1,4 +1,17 @@
 itemGroup.craftenchants=Craftable Enchantments
 
 #Item localizations
+##Components localization
+item.horsehair.name=Horse Hair
+
+##Enchantments localizations
+item.armorkit.name=Armor Kit
+item.blastresistpad.name=Blast Resistant Pad
+item.counterweightiron.name=Iron Counter Weight
+item.counterweightstone.name=Stone Counter Weight
+item.fireoil.name=Fire Oil
+item.reinforcednock.name=Reinforced Nock
 item.sharpeningstone.name=Sharpening Stone
+item.snorkle.name=Snorkle
+item.studsiron.name=Iron Studs
+item.woolpadding.name=Wool Padding
