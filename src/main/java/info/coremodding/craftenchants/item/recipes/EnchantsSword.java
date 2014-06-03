@@ -5,6 +5,7 @@
   */
 package info.coremodding.craftenchants.item.recipes;
 
+import net.minecraft.enchantment.Enchantment;
 import net.minecraft.inventory.InventoryCrafting;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -13,12 +14,11 @@ import net.minecraft.item.crafting.IRecipe;
 import net.minecraft.world.World;
 
 import info.coremodding.craftenchants.item.ItemCE;
-import info.coremodding.craftenchants.item.enchants.FireOil;
-import info.coremodding.craftenchants.item.enchants.SharpeningStone;
+import info.coremodding.craftenchants.item.enchants.Enchants;
 
 public class EnchantsSword implements IRecipe {
   private ItemCE enchantingItem;
-  private ItemStack enchantableItem;
+  private ItemStack enchantableWeapon;
   
   @Override
   public boolean matches(InventoryCrafting craftingMatrix, World craftWorld) {
@@ -30,10 +30,10 @@ public class EnchantsSword implements IRecipe {
           if (slottedItemStack != null) {
               Item slottedItem = slottedItemStack.getItem();
               if (slottedItem instanceof ItemSword) {
-                  enchantableItem = slottedItemStack.copy();
+                  enchantableWeapon = slottedItemStack.copy();
                   containsSword = true;
               }
-              if (slottedItem instanceof SharpeningStone || slottedItem instanceof FireOil) {
+              if (slottedItem instanceof Enchants) {
                   enchantingItem = (ItemCE)slottedItem;
                   containsEnchant = true;
               }
@@ -44,13 +44,19 @@ public class EnchantsSword implements IRecipe {
 
   @Override
   public ItemStack getCraftingResult(InventoryCrafting inventorycrafting) {
-      return applyEnchantment();
+      return shouldEnchant() ? applyEnchantment() : null;
+  }
+  
+  private boolean shouldEnchant() {
+    Enchantment enchantingType = enchantingItem.getEnchantmentType();
+    boolean willEnchant = enchantingType.equals(Enchantment.knockback) || enchantingType.equals(Enchantment.fireAspect);
+    return !enchantableWeapon.isItemEnchanted() && willEnchant;
   }
 
   private ItemStack applyEnchantment() {
-      if (!enchantableItem.isItemEnchanted())
-          enchantableItem.addEnchantment(enchantingItem.getEnchantmentType(), enchantingItem.getEnchantmentLevel());
-      return enchantableItem;
+      if (!enchantableWeapon.isItemEnchanted())
+          enchantableWeapon.addEnchantment(enchantingItem.getEnchantmentType(), enchantingItem.getEnchantmentLevel());
+      return enchantableWeapon;
   }
 
   @Override

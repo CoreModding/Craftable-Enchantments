@@ -13,7 +13,7 @@ import net.minecraft.item.crafting.IRecipe;
 import net.minecraft.world.World;
 
 import info.coremodding.craftenchants.item.ItemCE;
-import info.coremodding.craftenchants.item.enchants.ReinforcedNock;
+import info.coremodding.craftenchants.item.enchants.Enchants;
 
 public class EnchantsArmor implements IRecipe {
   private ItemCE enchantingItem;
@@ -36,7 +36,7 @@ public class EnchantsArmor implements IRecipe {
           enchantableArmor = slottedItemStack.copy();
           containsArmor = true;
         }
-        if (slottedItem instanceof ReinforcedNock) {
+        if (slottedItem instanceof Enchants) {
           enchantingItem = (ItemCE) slottedItem;
           containsEnchant = true;
         }
@@ -60,19 +60,22 @@ public class EnchantsArmor implements IRecipe {
 
   private boolean shouldEnchant() {
     boolean willEnchant = false;
-    if (((ItemArmor) (enchantableArmor.getItem())).armorType == 0) {
-      if (enchantingItem.getEnchantmentType().equals(Enchantment.respiration))
-        willEnchant = true;
-    }
-    if (((ItemArmor) (enchantableArmor.getItem())).armorType == 1) {
-      if (enchantingItem.getEnchantmentType().equals(Enchantment.blastProtection))
-        willEnchant = true;
-      if (enchantingItem.getEnchantmentType().equals(Enchantment.thorns))
-        willEnchant = true;
-    }
-    if (((ItemArmor) (enchantableArmor.getItem())).armorType == 3) {
-      if (enchantingItem.getEnchantmentType().equals(Enchantment.featherFalling))
-        willEnchant = true;
+    int armorType = ((ItemArmor) (enchantableArmor.getItem())).armorType;
+    Enchantment enchantingType = enchantingItem.getEnchantmentType();
+
+    switch (armorType) {
+      case 0:
+        willEnchant = enchantingType.equals(Enchantment.respiration);
+        break;
+      case 1:
+        willEnchant =
+            enchantingType.equals(Enchantment.blastProtection)
+                || enchantingType.equals(Enchantment.thorns)
+                || enchantingType.equals(Enchantment.unbreaking);
+        break;
+      case 3:
+        willEnchant = enchantingType.equals(Enchantment.featherFalling);
+        break;
     }
     return !enchantableArmor.isItemEnchanted() && willEnchant;
   }
