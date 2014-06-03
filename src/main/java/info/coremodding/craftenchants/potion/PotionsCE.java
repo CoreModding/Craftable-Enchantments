@@ -13,12 +13,9 @@ import java.util.Set;
 import net.minecraft.potion.Potion;
 import net.minecraftforge.common.MinecraftForge;
 
-import info.coremodding.craftenchants.event.CraftableEnchantmentsEventHooks;
-
 public class PotionsCE {
   public static Set<PotionCE> potions = new HashSet<>();
-  
-  public static PotionCE fireOil;
+
   public static PotionCE fireResistantCream;
   
   public static void initialize() {
@@ -46,11 +43,10 @@ public class PotionsCE {
         System.err.println(e);
       }
     }
-    MinecraftForge.EVENT_BUS.register(new CraftableEnchantmentsEventHooks());
+    MinecraftForge.EVENT_BUS.register(null);
   }
   
   private static void createPotions() {
-    potions.add(fireOil = new FireOil(33));
     potions.add(fireResistantCream = new FireResistantCream(34));
   }
 }
