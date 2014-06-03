@@ -15,8 +15,8 @@ import info.coremodding.craftenchants.item.enchants.Enchants;
 import info.coremodding.craftenchants.proxy.Proxy;
 
 public abstract class ItemCE extends Item implements Enchants {    
-    protected Enchantment enchantType;
-    protected int enchantLevel;
+    private Enchantment enchantType;
+    private int enchantLevel;
     
     protected ItemCE(String unlocalName) {
         super();
@@ -34,7 +34,10 @@ public abstract class ItemCE extends Item implements Enchants {
         return getEnchantmentType() != null && getEnchantmentLevel() > 0;
     }
     
-    protected abstract void setEnchantment(Enchantment type, int level);
+    protected void setEnchantment(Enchantment type, int level) {
+      this.enchantType = type;
+      this.enchantLevel = level;
+    }
     
     public Enchantment getEnchantmentType() {
         return this.enchantType;

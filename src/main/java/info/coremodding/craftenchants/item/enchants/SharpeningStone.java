@@ -14,9 +14,4 @@ public class SharpeningStone extends ItemCE implements Enchants {
     	super("sharpeningstone");
     	setEnchantment(Enchantment.sharpness, 1);
     }
-    @Override
-    protected void setEnchantment(Enchantment type, int level) {
-        this.enchantType = type;
-        this.enchantLevel = level;
-    }
 }
