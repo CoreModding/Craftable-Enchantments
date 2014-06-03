@@ -13,6 +13,7 @@ import net.minecraft.item.crafting.IRecipe;
 import net.minecraft.world.World;
 
 import info.coremodding.craftenchants.item.ItemCE;
+import info.coremodding.craftenchants.item.enchants.FireOil;
 import info.coremodding.craftenchants.item.enchants.SharpeningStone;
 
 public class EnchantsSword implements IRecipe {
@@ -32,7 +33,7 @@ public class EnchantsSword implements IRecipe {
                   enchantableItem = slottedItemStack.copy();
                   containsSword = true;
               }
-              if (slottedItem instanceof SharpeningStone) {
+              if (slottedItem instanceof SharpeningStone || slottedItem instanceof FireOil) {
                   enchantingItem = (ItemCE)slottedItem;
                   containsEnchant = true;
               }
