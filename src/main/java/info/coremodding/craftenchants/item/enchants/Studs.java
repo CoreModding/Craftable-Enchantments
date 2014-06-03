@@ -13,7 +13,7 @@ public class Studs extends ItemCE implements Enchants {
   private Item.ToolMaterial enchantMaterial;
   
   public Studs(Item.ToolMaterial enchantMaterial) {
-    super(enchantMaterial.toString().toLowerCase() + "studs");
+    super("studs" + enchantMaterial.toString().toLowerCase());
     this.enchantMaterial = enchantMaterial;
     setEnchantment(Enchantment.thorns, getMaterialEnchantmentLevel());
   }
