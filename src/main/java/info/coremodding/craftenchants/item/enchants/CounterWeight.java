@@ -18,8 +18,9 @@ public class CounterWeight extends ItemCE implements Enchants {
    * @param id Unique identifier for the item in the registry
    * @param enchantMaterial Key ingredient the enchantment uses.
    */
-  public CounterWeight() {
-    super("counterweight");
+  public CounterWeight(Item.ToolMaterial enchantMaterial) {
+    super("counterweight" + enchantMaterial.toString().toLowerCase());
+    this.enchantMaterial = enchantMaterial;
     setEnchantment(Enchantment.knockback, getMaterialEnchantmentLevel());
   }
   
