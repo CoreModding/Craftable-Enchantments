@@ -4,12 +4,14 @@
  */
 package info.coremodding.craftenchants.event;
 
-import info.coremodding.craftenchants.item.ItemsCE;
-
 import cpw.mods.fml.common.event.FMLInitializationEvent;
+
+import info.coremodding.craftenchants.item.ItemsCE;
+import info.coremodding.craftenchants.item.recipes.RecipesCE;
 
 public class Initializer {
   public static void handle(FMLInitializationEvent initEvent) {
     ItemsCE.initialize();
+    RecipesCE.initialize();
   }
 }
