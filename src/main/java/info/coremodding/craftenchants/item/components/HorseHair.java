@@ -5,8 +5,6 @@
   */
 package info.coremodding.craftenchants.item.components;
 
-import net.minecraft.enchantment.Enchantment;
-
 import info.coremodding.craftenchants.item.ItemCE;
 
 public class HorseHair extends ItemCE {
@@ -15,10 +13,4 @@ public class HorseHair extends ItemCE {
         super("horsehair");
         setMaxStackSize(16);
     }
-    
-    @Override
-    protected void setEnchantment(Enchantment type, int level) {
-        
-    }
-
 }
