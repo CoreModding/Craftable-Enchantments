@@ -12,9 +12,9 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
-import info.coremodding.craftenchants.event.Initializer;
-import info.coremodding.craftenchants.event.PostInitializer;
-import info.coremodding.craftenchants.event.PreInitializer;
+import info.coremodding.craftenchants.event.initialize.Initializer;
+import info.coremodding.craftenchants.event.initialize.PostInitializer;
+import info.coremodding.craftenchants.event.initialize.PreInitializer;
 import info.coremodding.craftenchants.proxy.Proxy;
 
 @Mod(modid = CraftableEnchantments.ID, name = CraftableEnchantments.NAME)
