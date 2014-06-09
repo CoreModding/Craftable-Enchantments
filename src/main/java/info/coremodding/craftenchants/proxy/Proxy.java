@@ -10,5 +10,5 @@ import info.coremodding.craftenchants.library.CECreativeTab;
 import net.minecraft.creativetab.CreativeTabs;
 
 public interface Proxy {
-    public static final CreativeTabs tab = CECreativeTab.getInstance();
+    public static final CreativeTabs tabMain = CECreativeTab.getInstance();
 }
