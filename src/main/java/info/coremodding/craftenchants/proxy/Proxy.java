@@ -1,14 +1,18 @@
 /**
  * Copyright 2014 by CoreModding under GNU Lesser General Public License (LGPLv3)
- * http://www.gnu.org/licenses/gpl.html
- * http://www.gnu.org/licenses/lgpl.html
+ * http://www.gnu.org/licenses/gpl.html http://www.gnu.org/licenses/lgpl.html
  */
 package info.coremodding.craftenchants.proxy;
 
-import info.coremodding.craftenchants.library.CECreativeTab;
-
 import net.minecraft.creativetab.CreativeTabs;
 
+import info.coremodding.craftenchants.library.CreativeTabCE;
+
 public interface Proxy {
-    public static final CreativeTabs tabMain = CECreativeTab.getInstance();
+  /** The client proxy location */
+  public static final String CLIENT_PROXY = "info.coremodding.craftenchants.proxy.Client";
+  /** The server proxy location */
+  public static final String SERVER_PROXY = "info.coremodding.craftenchants.proxy.Server";
+
+  public static final CreativeTabs tabMain = CreativeTabCE.getInstance();
 }
