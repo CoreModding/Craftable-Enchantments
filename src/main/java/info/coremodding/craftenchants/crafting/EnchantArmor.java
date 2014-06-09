@@ -6,7 +6,7 @@
 package info.coremodding.craftenchants.crafting;
 
 import info.coremodding.craftenchants.enchants.ItemCE;
-import info.coremodding.craftenchants.enchants.item.ReinforcedNock;
+import info.coremodding.craftenchants.enchants.item.enchants.ReinforcedNock;
 
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.inventory.InventoryCrafting;

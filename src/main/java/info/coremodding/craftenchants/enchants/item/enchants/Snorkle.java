@@ -3,17 +3,17 @@
  * http://www.gnu.org/licenses/gpl.html
  * http://www.gnu.org/licenses/lgpl.html
  */
-package info.coremodding.craftenchants.enchants.item;
+package info.coremodding.craftenchants.enchants.item.enchants;
 
 import info.coremodding.craftenchants.enchants.ItemCE;
 
 import net.minecraft.enchantment.Enchantment;
 
-public class WoolPadding extends ItemCE {
-    public WoolPadding(int id) {
+public class Snorkle extends ItemCE {
+    public Snorkle(int id) {
         super(id);
-        setName("woolpadding");
-        setEnchant(Enchantment.featherFalling, 2);
+        setName("snorkle");
+        setEnchant(Enchantment.respiration, 2);
     }
 
 }

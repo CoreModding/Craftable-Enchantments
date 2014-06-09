@@ -10,17 +10,17 @@ import java.util.Set;
 import net.minecraft.item.EnumToolMaterial;
 import cpw.mods.fml.common.registry.GameRegistry;
 
-import info.coremodding.craftenchants.enchants.item.ArmorKit;
-import info.coremodding.craftenchants.enchants.item.BlastResistPad;
-import info.coremodding.craftenchants.enchants.item.Counterweight;
-import info.coremodding.craftenchants.enchants.item.FireOil;
-import info.coremodding.craftenchants.enchants.item.FlameResistantCream;
-import info.coremodding.craftenchants.enchants.item.ReinforcedNock;
-import info.coremodding.craftenchants.enchants.item.SharpeningStone;
-import info.coremodding.craftenchants.enchants.item.Snorkle;
-import info.coremodding.craftenchants.enchants.item.Studs;
-import info.coremodding.craftenchants.enchants.item.WoolPadding;
 import info.coremodding.craftenchants.enchants.item.component.HorseHair;
+import info.coremodding.craftenchants.enchants.item.enchants.ArmorKit;
+import info.coremodding.craftenchants.enchants.item.enchants.BlastResistPad;
+import info.coremodding.craftenchants.enchants.item.enchants.Counterweight;
+import info.coremodding.craftenchants.enchants.item.enchants.FireOil;
+import info.coremodding.craftenchants.enchants.item.enchants.FlameResistantCream;
+import info.coremodding.craftenchants.enchants.item.enchants.ReinforcedNock;
+import info.coremodding.craftenchants.enchants.item.enchants.SharpeningStone;
+import info.coremodding.craftenchants.enchants.item.enchants.Snorkle;
+import info.coremodding.craftenchants.enchants.item.enchants.Studs;
+import info.coremodding.craftenchants.enchants.item.enchants.WoolPadding;
 import info.coremodding.craftenchants.library.ModIDs;
 
 public class ItemsCE {
