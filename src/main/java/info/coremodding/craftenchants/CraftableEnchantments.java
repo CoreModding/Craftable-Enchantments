@@ -12,8 +12,8 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
-import info.coremodding.craftenchants.event.init.Initializer;
-import info.coremodding.craftenchants.event.init.PreInitializer;
+import info.coremodding.craftenchants.event.initialize.Initializer;
+import info.coremodding.craftenchants.event.initialize.PreInitializer;
 import info.coremodding.craftenchants.library.Reference;
 import info.coremodding.craftenchants.proxy.Proxy;
 

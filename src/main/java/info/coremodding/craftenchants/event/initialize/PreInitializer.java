@@ -3,7 +3,7 @@
  * http://www.gnu.org/licenses/gpl.html
  * http://www.gnu.org/licenses/lgpl.html
  */
-package info.coremodding.craftenchants.event.init;
+package info.coremodding.craftenchants.event.initialize;
 
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
