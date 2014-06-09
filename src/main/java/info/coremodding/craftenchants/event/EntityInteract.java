@@ -6,6 +6,6 @@
 package info.coremodding.craftenchants.event;
 
 
-public class PlayerUsesItem {
+public class EntityInteract {
     
 }

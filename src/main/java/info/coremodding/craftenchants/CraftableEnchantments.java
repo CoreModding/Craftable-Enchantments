@@ -38,7 +38,6 @@ public class CraftableEnchantments {
     /**
      * @param preEvent The event that triggered the method
      */
-    @SuppressWarnings("static-method")
     @EventHandler
     public void preInitialization(FMLPreInitializationEvent preEvent) {
         PreInitializer.handle(preEvent);
