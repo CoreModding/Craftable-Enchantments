@@ -5,12 +5,10 @@
 package info.coremodding.craftenchants.event;
 
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.entity.passive.EntityHorse;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.MathHelper;
 import net.minecraftforge.event.entity.player.EntityInteractEvent;
 import scala.util.Random;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
@@ -28,8 +26,7 @@ public class EntityInteract {
     Entity target = interaction.entity;
     ItemStack itemInHand = player.inventory.getCurrentItem();
 
-    if (itemInHand != null && itemInHand.getItem().equals(Items.shears)
-        && !player.capabilities.isCreativeMode) {
+    if (itemInHand != null && itemInHand.getItem().equals(Items.shears)) {
       if (target instanceof EntityHorse) {
         EntityHorse horseTarget = (EntityHorse) target;
         if (horseTarget.getTemper() > 0) {
@@ -38,7 +35,7 @@ public class EntityInteract {
           if (dropChance < 50) {
             int dropCount = random.nextInt(3) + 1;
             target.dropItem(ItemsCE.horseHair, dropCount);
-            horseTarget.setTemper(MathHelper.clamp_int(horseTarget.getTemper() - dropCount, 0, 0));
+            horseTarget.increaseTemper(-dropCount);
           }
         }
       }
