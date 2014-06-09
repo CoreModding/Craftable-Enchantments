@@ -10,9 +10,9 @@ import info.coremodding.craftenchants.library.CreativeTabCE;
 
 public interface Proxy {
   /** The client proxy location */
-  public static final String CLIENT_PROXY = "info.coremodding.craftenchants.proxy.Client";
+  public static final String CLIENT = "info.coremodding.craftenchants.proxy.Client";
   /** The server proxy location */
-  public static final String SERVER_PROXY = "info.coremodding.craftenchants.proxy.Server";
+  public static final String SERVER = "info.coremodding.craftenchants.proxy.Server";
 
   public static final CreativeTabs tabMain = CreativeTabCE.getInstance();
 }

@@ -14,7 +14,6 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
 import info.coremodding.craftenchants.event.initialize.Initializer;
 import info.coremodding.craftenchants.event.initialize.PreInitializer;
-import info.coremodding.craftenchants.library.Reference;
 import info.coremodding.craftenchants.proxy.Proxy;
 
 /**
@@ -28,13 +27,13 @@ public class CraftableEnchantments {
     /**
      * The instance of the class forge uses
      */
-    @Instance(Reference.MOD_ID)
+    @Instance(ID)
     public static CraftableEnchantments instance;
 
     /**
      * Forge's instance of the mod proxy
      */
-    @SidedProxy(clientSide = Reference.CLIENT_PROXY, serverSide = Reference.SERVER_PROXY)
+    @SidedProxy(clientSide = Proxy.CLIENT, serverSide = Proxy.SERVER)
     public static Proxy proxy;
 
     /**
