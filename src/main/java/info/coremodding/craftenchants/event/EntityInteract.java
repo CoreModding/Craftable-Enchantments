@@ -23,20 +23,16 @@ public class EntityInteract {
   @SubscribeEvent
   public void interact(EntityInteractEvent interaction) {
     EntityPlayer player = interaction.entityPlayer;
-    Entity target = interaction.entity;
+    Entity target = interaction.target;
     ItemStack itemInHand = player.inventory.getCurrentItem();
 
     if (itemInHand != null && itemInHand.getItem().equals(Items.shears)) {
       if (target instanceof EntityHorse) {
-        EntityHorse horseTarget = (EntityHorse) target;
-        if (horseTarget.getTemper() > 0) {
-          Random random = new Random();
-          int dropChance = random.nextInt(100);
-          if (dropChance < 50) {
-            int dropCount = random.nextInt(3) + 1;
-            target.dropItem(ItemsCE.horseHair, dropCount);
-            horseTarget.increaseTemper(-dropCount);
-          }
+        Random random = new Random();
+        int dropChance = random.nextInt(100);
+        if (dropChance < 50) {
+          int dropCount = random.nextInt(3) + 1;
+          target.dropItem(ItemsCE.horseHair, dropCount);
         }
       }
     }
