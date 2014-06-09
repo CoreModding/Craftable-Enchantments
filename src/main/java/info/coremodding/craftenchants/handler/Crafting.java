@@ -5,20 +5,20 @@
   */
 package info.coremodding.craftenchants.handler;
 
-import info.coremodding.craftenchants.item.recipes.EnchantArmor;
-import info.coremodding.craftenchants.item.recipes.EnchantBow;
-import info.coremodding.craftenchants.item.recipes.EnchantSword;
-import info.coremodding.craftenchants.item.recipes.VanillaRecipes;
+import info.coremodding.craftenchants.item.recipes.EnchantsArmor;
+import info.coremodding.craftenchants.item.recipes.EnchantsBow;
+import info.coremodding.craftenchants.item.recipes.EnchantsSword;
+import info.coremodding.craftenchants.item.recipes.EnchantsItem;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 
 public class Crafting {
     
     public static void initialize() {
-        GameRegistry.addRecipe(new EnchantSword());
-        GameRegistry.addRecipe(new EnchantBow());
-        GameRegistry.addRecipe(new EnchantArmor());
+        GameRegistry.addRecipe(new EnchantsSword());
+        GameRegistry.addRecipe(new EnchantsBow());
+        GameRegistry.addRecipe(new EnchantsArmor());
         
-        VanillaRecipes.addRecipes();
+        EnchantsItem.addRecipes();
     }
 }

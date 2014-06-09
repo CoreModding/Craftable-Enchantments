@@ -20,8 +20,10 @@ import info.coremodding.craftenchants.proxy.Proxy;
 /**
  * The main mod class
  */
-@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME)
+@Mod(modid = CraftableEnchantments.ID, name = CraftableEnchantments.NAME)
 public class CraftableEnchantments {
+  public static final String ID = "craftenchants";
+  public static final String NAME = "Craftable Enchantments";
 
     /**
      * The instance of the class forge uses
