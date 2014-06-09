@@ -10,6 +10,7 @@ import net.minecraft.item.Item;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
+import info.coremodding.craftenchants.CraftableEnchantments;
 import info.coremodding.craftenchants.item.enchants.Enchants;
 import info.coremodding.craftenchants.proxy.Proxy;
 
@@ -21,12 +22,13 @@ public abstract class ItemCE extends Item implements Enchants {
     super();
     setCreativeTab(Proxy.tabMain);
     setUnlocalizedName(unlocalName);
+    setTextureName(CraftableEnchantments.ID + ":" + unlocalName);
   }
 
   @Override
   @SideOnly(Side.CLIENT)
   public void registerIcons(IIconRegister iconRegister) {
-    this.itemIcon = iconRegister.registerIcon(this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf('.') + 1));
+    this.itemIcon = iconRegister.registerIcon(this.getUnlocalizedName());
   }
 
   public boolean hasEnchantment() {
