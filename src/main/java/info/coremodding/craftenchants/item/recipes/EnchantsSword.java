@@ -15,7 +15,7 @@ import net.minecraft.item.ItemSword;
 import net.minecraft.item.crafting.IRecipe;
 import net.minecraft.world.World;
 
-public class EnchantSword implements IRecipe {
+public class EnchantsSword implements IRecipe {
 	private ItemCE enchantingItem;
 	private ItemStack enchantableItem;
 

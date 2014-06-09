@@ -10,9 +10,8 @@ import net.minecraft.item.ItemStack;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 import info.coremodding.craftenchants.item.ItemsCE;
-import info.coremodding.craftenchants.library.ModRecipes;
 
-public class VanillaRecipes {
+public class EnchantsItem {
   public static final Object[] armorKit = new Object[] {"LLL", "LWL", "LLL", 'L',
       new ItemStack(Item.leather, 1), 'W', Block.cloth};
 
@@ -44,19 +43,14 @@ public class VanillaRecipes {
   }
 
   private static void addItemRecipes() {
-    GameRegistry.addShapedRecipe(new ItemStack(ItemsCE.armorKit), ModRecipes.Items.armorKit);
-    GameRegistry.addShapedRecipe(new ItemStack(ItemsCE.blastResistPad),
-        ModRecipes.Items.blastResistPad);
-    GameRegistry.addShapedRecipe(new ItemStack(ItemsCE.ironCounterweight),
-        ModRecipes.Items.ironCounterweight);
-    GameRegistry.addShapedRecipe(new ItemStack(ItemsCE.ironStuds), ModRecipes.Items.ironStuds);
-    GameRegistry.addShapedRecipe(new ItemStack(ItemsCE.reinforcedNock),
-        ModRecipes.Items.reinforcedNock);
-    GameRegistry.addShapedRecipe(new ItemStack(ItemsCE.sharpeningStone),
-        ModRecipes.Items.sharpeningStone);
-    GameRegistry.addShapedRecipe(new ItemStack(ItemsCE.snorkle), ModRecipes.Items.snorkle);
-    GameRegistry.addShapedRecipe(new ItemStack(ItemsCE.stoneCounterweight),
-        ModRecipes.Items.stoneCounterweight);
-    GameRegistry.addShapedRecipe(new ItemStack(ItemsCE.woolPadding), ModRecipes.Items.woolPadding);
+    GameRegistry.addShapedRecipe(new ItemStack(ItemsCE.armorKit), armorKit);
+    GameRegistry.addShapedRecipe(new ItemStack(ItemsCE.blastResistPad), blastResistPad);
+    GameRegistry.addShapedRecipe(new ItemStack(ItemsCE.ironCounterweight), ironCounterweight);
+    GameRegistry.addShapedRecipe(new ItemStack(ItemsCE.ironStuds), ironStuds);
+    GameRegistry.addShapedRecipe(new ItemStack(ItemsCE.reinforcedNock), reinforcedNock);
+    GameRegistry.addShapedRecipe(new ItemStack(ItemsCE.sharpeningStone), sharpeningStone);
+    GameRegistry.addShapedRecipe(new ItemStack(ItemsCE.snorkle), snorkle);
+    GameRegistry.addShapedRecipe(new ItemStack(ItemsCE.stoneCounterweight), stoneCounterweight);
+    GameRegistry.addShapedRecipe(new ItemStack(ItemsCE.woolPadding), woolPadding);
   }
 }
