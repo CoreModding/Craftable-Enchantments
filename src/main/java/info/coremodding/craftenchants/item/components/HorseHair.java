@@ -1,6 +1,6 @@
-package info.coremodding.craftenchants.enchants.item.component;
+package info.coremodding.craftenchants.item.components;
 
-import info.coremodding.craftenchants.enchants.ItemCE;
+import info.coremodding.craftenchants.item.ItemCE;
 
 public class HorseHair extends ItemCE {
 

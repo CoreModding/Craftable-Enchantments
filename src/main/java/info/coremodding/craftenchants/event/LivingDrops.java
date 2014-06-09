@@ -6,7 +6,7 @@ import net.minecraft.entity.passive.EntityHorse;
 import net.minecraftforge.event.ForgeSubscribe;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 
-import info.coremodding.craftenchants.enchants.ItemsCE;
+import info.coremodding.craftenchants.item.ItemsCE;
 
 public class LivingDrops {
 

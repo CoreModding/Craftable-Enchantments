@@ -5,10 +5,10 @@
   */
 package info.coremodding.craftenchants.handler;
 
-import info.coremodding.craftenchants.enchants.item.recipes.EnchantArmor;
-import info.coremodding.craftenchants.enchants.item.recipes.EnchantBow;
-import info.coremodding.craftenchants.enchants.item.recipes.EnchantSword;
-import info.coremodding.craftenchants.enchants.item.recipes.VanillaRecipes;
+import info.coremodding.craftenchants.item.recipes.EnchantArmor;
+import info.coremodding.craftenchants.item.recipes.EnchantBow;
+import info.coremodding.craftenchants.item.recipes.EnchantSword;
+import info.coremodding.craftenchants.item.recipes.VanillaRecipes;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 

@@ -2,7 +2,7 @@
  * Copyright 2014 by CoreModding under GNU Lesser General Public License (LGPLv3)
  * http://www.gnu.org/licenses/gpl.html http://www.gnu.org/licenses/lgpl.html
  */
-package info.coremodding.craftenchants.enchants;
+package info.coremodding.craftenchants.item;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -10,17 +10,17 @@ import java.util.Set;
 import net.minecraft.item.EnumToolMaterial;
 import cpw.mods.fml.common.registry.GameRegistry;
 
-import info.coremodding.craftenchants.enchants.item.component.HorseHair;
-import info.coremodding.craftenchants.enchants.item.enchants.ArmorKit;
-import info.coremodding.craftenchants.enchants.item.enchants.BlastResistPad;
-import info.coremodding.craftenchants.enchants.item.enchants.Counterweight;
-import info.coremodding.craftenchants.enchants.item.enchants.FireOil;
-import info.coremodding.craftenchants.enchants.item.enchants.FlameResistantCream;
-import info.coremodding.craftenchants.enchants.item.enchants.ReinforcedNock;
-import info.coremodding.craftenchants.enchants.item.enchants.SharpeningStone;
-import info.coremodding.craftenchants.enchants.item.enchants.Snorkle;
-import info.coremodding.craftenchants.enchants.item.enchants.Studs;
-import info.coremodding.craftenchants.enchants.item.enchants.WoolPadding;
+import info.coremodding.craftenchants.item.components.HorseHair;
+import info.coremodding.craftenchants.item.enchants.ArmorKit;
+import info.coremodding.craftenchants.item.enchants.BlastResistPad;
+import info.coremodding.craftenchants.item.enchants.Counterweight;
+import info.coremodding.craftenchants.item.enchants.FireOil;
+import info.coremodding.craftenchants.item.enchants.FlameResistantCream;
+import info.coremodding.craftenchants.item.enchants.ReinforcedNock;
+import info.coremodding.craftenchants.item.enchants.SharpeningStone;
+import info.coremodding.craftenchants.item.enchants.Snorkle;
+import info.coremodding.craftenchants.item.enchants.Studs;
+import info.coremodding.craftenchants.item.enchants.WoolPadding;
 import info.coremodding.craftenchants.library.ModIDs;
 
 public class ItemsCE {

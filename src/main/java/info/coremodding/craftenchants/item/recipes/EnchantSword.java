@@ -3,10 +3,10 @@
   * http://www.gnu.org/licenses/gpl.html
   * http://www.gnu.org/licenses/lgpl.html
   */
-package info.coremodding.craftenchants.enchants.item.recipes;
+package info.coremodding.craftenchants.item.recipes;
 
-import info.coremodding.craftenchants.enchants.ItemCE;
-import info.coremodding.craftenchants.enchants.item.enchants.SharpeningStone;
+import info.coremodding.craftenchants.item.ItemCE;
+import info.coremodding.craftenchants.item.enchants.SharpeningStone;
 
 import net.minecraft.inventory.InventoryCrafting;
 import net.minecraft.item.Item;
