@@ -12,15 +12,35 @@ import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import info.coremodding.craftenchants.item.ItemsCE;
 
 public class LivingDrops {
+  private int deathDropChance;
+  
   @SubscribeEvent
   public void onEntityLivingDeath(LivingDeathEvent event) {
     if (event.entity instanceof EntityHorse) {
       Random random = new Random();
       int dropChance = random.nextInt(100);
-      if (dropChance < 50) {
+      if (dropChance < deathDropChance) {
         int dropCount = random.nextInt(3) + 1;
         event.entity.dropItem(ItemsCE.horseHair, dropCount);
       }
+    }
+  }
+  
+  public LivingDrops() {
+    this(5);
+  }
+  
+  public LivingDrops(int deathDropChance) {
+    this.deathDropChance = deathDropChance;
+  }
+  
+  public int getDeathDropChance() {
+    return this.deathDropChance;
+  }
+  
+  public void setDeathDropChance(int deathDropChance) {
+    if(0 <= deathDropChance && deathDropChance <= 100) {
+      this.deathDropChance = deathDropChance;
     }
   }
 }

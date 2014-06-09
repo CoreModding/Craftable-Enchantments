@@ -9,8 +9,8 @@ import cpw.mods.fml.common.FMLCommonHandler;
 import net.minecraftforge.common.MinecraftForge;
 
 public class Events {
-  private static LivingDrops livingDropsEvent = new LivingDrops();
-  private static EntityInteract entityInteractEvents = new EntityInteract();
+  private static LivingDrops livingDropsEvent = new LivingDrops(50);
+  private static EntityInteract entityInteractEvents = new EntityInteract(5);
   
   public static void initialize() {
     registerFMLEvents();

@@ -16,6 +16,8 @@ import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import info.coremodding.craftenchants.item.ItemsCE;
 
 public class EntityInteract {
+  private int shearDropChance;
+
   /**
    * Called when a player interacts with a mob. e.g. gets milk from a cow, gets into the saddle on a
    * pig.
@@ -28,13 +30,35 @@ public class EntityInteract {
 
     if (itemInHand != null && itemInHand.getItem().equals(Items.shears)) {
       if (target instanceof EntityHorse) {
-        Random random = new Random();
-        int dropChance = random.nextInt(100);
-        if (dropChance < 50) {
-          int dropCount = random.nextInt(3) + 1;
-          target.dropItem(ItemsCE.horseHair, dropCount);
+        EntityHorse horseTarget = (EntityHorse) target;
+        if (horseTarget.getTemper() > 0) {
+          Random random = new Random();
+          int dropChance = random.nextInt(100);
+          if (dropChance < this.shearDropChance) {
+            int dropCount = random.nextInt(3) + 1;
+            target.dropItem(ItemsCE.horseHair, dropCount);
+            horseTarget.increaseTemper(-dropCount);
+          }
         }
       }
     }
+  }
+
+  public int getShearDropChance() {
+    return this.shearDropChance;
+  }
+
+  public void setShearDropChance(int shearDropChance) {
+    if (0 <= shearDropChance && shearDropChance <= 100) {
+      this.shearDropChance = shearDropChance;
+    }
+  }
+
+  public EntityInteract() {
+    this(50);
+  }
+
+  public EntityInteract(int shearDropChance) {
+    this.shearDropChance = shearDropChance;
   }
 }
