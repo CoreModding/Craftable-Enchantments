@@ -4,11 +4,8 @@
  */
 package info.coremodding.craftenchants.item;
 
-import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.item.Item;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
 
 import info.coremodding.craftenchants.CraftableEnchantments;
 import info.coremodding.craftenchants.item.enchants.Enchants;
@@ -23,12 +20,6 @@ public abstract class ItemCE extends Item implements Enchants {
     setCreativeTab(Proxy.tabMain);
     setUnlocalizedName(unlocalName);
     setTextureName(CraftableEnchantments.ID + ":" + unlocalName);
-  }
-
-  @Override
-  @SideOnly(Side.CLIENT)
-  public void registerIcons(IIconRegister iconRegister) {
-    this.itemIcon = iconRegister.registerIcon(this.getUnlocalizedName());
   }
 
   public boolean hasEnchantment() {
