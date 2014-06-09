@@ -5,6 +5,8 @@
  */
 package info.coremodding.craftenchants.library;
 
+import info.coremodding.craftenchants.item.ItemsCE;
+
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -16,7 +18,6 @@ import net.minecraft.item.ItemStack;
 public class ModRecipes {
 
     public static class Items {
-        /* @formatter:off For the sake of readability, do not format the following */
         public static final Object[] armorKit = new Object[] {
                                      "LLL", 
                                      "LWL", 
@@ -50,7 +51,7 @@ public class ModRecipes {
                                      "H  ", 
                                      " H ", 
                                      "  H", 
-                                     'H', Item.melon };
+                                     'H', ItemsCE.horseHair };
 
         public static final Object[] sharpeningStone = new Object[] { 
                                      "FFF", 
@@ -80,7 +81,5 @@ public class ModRecipes {
                                      "WRW", 
                                      'W', Block.cloth, 
                                      'R', new ItemStack(Item.silk) };
-        
-        /* @formatter:on Continue formatting */
     }
 }
