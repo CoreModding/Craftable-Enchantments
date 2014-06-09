@@ -6,7 +6,7 @@ package info.coremodding.craftenchants.event;
 
 import net.minecraftforge.common.MinecraftForge;
 
-public class Events {
+public class EventsCE {
   private static LivingDrops livinigDropsEvent = new LivingDrops();
   private static EntityInteract entityInteractEvent = new EntityInteract();
 
